@@ -1,0 +1,53 @@
+<style>
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menu/clickgallery.html
+Copyright (c) 2005-20011 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+.target {display:none;}
+
+#gallery {width:700px; height:720px; margin:20px auto; position:relative; overflow:hidden; background:#111; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.5);}
+#fullsize {width:7000px; height:660px; position:relative;
+-moz-transition: 1s;
+-ms-transition: 1s;
+-o-transition: 1s;
+-webkit-transition: 1s;
+transition: 1s;
+}
+#fullsize div {width:700px; height:640px; float:left;}
+#fullsize div img {display:block; border:1px solid #ddd;}
+#fullsize div img.landscape {margin:90px auto;}
+#fullsize div img.portrait {margin:10px auto;}
+
+ul#thumbnails {padding:0 0 0 70px;margin:0;list-style:none;}
+ul#thumbnails li {float:left;}
+ul#thumbnails li a {height:50px;width:50px;padding:3px;display:block;text-decoration:none;background:#111;}
+ul#thumbnails li a img {width:50px; height:50px; border:0;}
+ul#thumbnails li a:hover {background:#fc0;}
+
+#target1:target ~ #gallery #fullsize {margin-left:0;}
+#target2:target ~ #gallery #fullsize {margin-left:-700px;}
+#target3:target ~ #gallery #fullsize {margin-left:-1400px;}
+#target4:target ~ #gallery #fullsize {margin-left:-2100px;}
+#target5:target ~ #gallery #fullsize {margin-left:-2800px;}
+#target6:target ~ #gallery #fullsize {margin-left:-3500px;}
+#target7:target ~ #gallery #fullsize {margin-left:-4200px;}
+#target8:target ~ #gallery #fullsize {margin-left:-4900px;}
+#target9:target ~ #gallery #fullsize {margin-left:-5600px;}
+#target10:target ~ #gallery #fullsize {margin-left:-6300px;}
+
+
+</style>
+
+
+<style>
+	@media only screen and (max-width:480px) {
+	#gallery {display:none;}
+	#info h3.smartphone {display:block;}
+	}
+</style>
+

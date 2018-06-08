@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Heather's Baking Bee Order Form</title>
+<link href="css/form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body background="images/wood.jpg">
+	
+	<img src="images/hungry.png" style="float: left;">
+
+<div style="float: right; z-index: 25; width: 250px; background: #C5C1C1; position: absolute; left: 55%; top: 150px;">enter the quantity of items you would like to order and your preferred delivery day and time and select Send.</div>	
+	<a href="index.htm">Back to the Home Page</a>
+<form id="two" action="..." method="post">
+
+  <fieldset id="personal">
+    <legend>Desert Breads</legend>
+    <label for="DoubleChoc">Double Chocolate </label><br>
+    Minis (2/$5)
+	<input name="DCM" id="DCM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Loafs ($8)
+	<input name="DCL" id="DCL" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+    <label for="bananaWal">Banana Walnut </label><br>
+	Minis (2/$5)
+	<input name="BWM" id="BWM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Loafs ($8)
+	<input name="BWL" id="BWLs" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+    <label for="PumpkinCran">Pumpkin Cranberry </label> <br>
+	Minis (2/$5)
+	<input name="PCM" id="PCM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Loafs ($8)
+	<input name="PCL" id="PCL" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+  <fieldset id="personal">
+    <legend>Brownies</legend>
+    With Walnuts (3/$6)
+	<input name="BWW" id="BWW" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	No Walnuts (3/$5)
+	<input name="BNW" id="BNW" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+  <fieldset id="personal">
+    <legend>Breads</legend>
+    Dinner Rolls (6/$5)
+	<input name="BDR" id="BDR" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	English Muffins (6/$5)
+	<input name="BEM" id="BEM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Burger/Sandwich Buns (4/$5)
+	<input name="BBB" id="BBB" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	White Bread ($7)
+	<input name="BWH" id="BWH" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Wheat Bread ($7)
+	<input name="BWB" id="BWB" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+  <fieldset id="personal">
+    <legend>Cookies</legend>
+    Chocolate Chip (12/$6)
+	<input name="CCC" id="CCC" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	PB&amp;J (12/$6)
+	<input name="PBJ" id="PBJ" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Bluberry Chocolate Wedding (12/$6)
+	<input name="CBC" id="CBC" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Lemon Wedding (12/$6)
+	<input name="CLW" id="CLW" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Oatmeal Apple Raisin (12/$6)
+	<input name="COA" id="COA" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+
+  <!-- fieldset id="opt">
+    <legend>OPTIONS</legend>
+    <select name="choice">
+      <option selected="selected" label="none" value="none">
+      none
+      </option>
+      <optgroup label="Group 1">
+        <option label="cg1a" value="val_1a">Selection group 1a
+        </option>
+        <option label="cg1b" value="val_1b">Selection group 1b
+        </option>
+        <option label="cg1c" value="val_1c">Selection group 1c
+        </option>
+
+      </optgroup>
+      <optgroup label="Group 2">
+        <option label="cg2a" value="val_2a">Selection group 2a
+        </option>
+        <option label="cg2b" value="val_2a">Selection group 2b
+        </option>
+      </optgroup>
+      <optgroup label="Group 3">
+        <option label="cg3a" value="val_3a">Selection group 3a
+        </option>
+        <option label="cg3a" value="val_3a">Selection group 3b
+        </option>
+      </optgroup>
+    </select>
+  </fieldset -->
+  <p>
+  <input id="button1" type="submit" value="Send" /> 
+  <input id="button2" type="reset" />
+  </p>
+
+</form>
+	
+	
+<!-- form id="form1" name="form1" method="post">
+  <p>Select your Goodies:</p>
+  <p><u>Desset Breads</u></p>
+  <p>	Double Chocolate 
+    <label for="number">:</label>
+    <input type="number" name="number" id="number">
+    (Minis: 2/$5 Loaf: $8)<br>
+  <p>Banana Walnut (Minis: 2/$5 Loaf: $8)<br>
+  <p>Pumpkin Cranberry (Minis: 2/$5 Loaf: $8)<br>
+  <p>&nbsp;</p>
+  <p><u>Brownies</u></p>
+  <p>With Walnuts (3/$6)<br>
+  <p>No Walnuts (3/$5)<br>
+  <p>&nbsp;</p>
+  <p><u>Breads</u></p>
+  <p>	Dinner Rolls (6/$5)<br>
+  <p>English Muffins (6/$5)<br>
+  <p>Burger/Sandwich Buns (4/$5)<br>
+  <p>White Bread ($7)<br>
+  <p>Wheat Bread ($7)<br>
+  <p>&nbsp;</p>
+  <p><u>Cookies</u></p>
+  <p>Chocolate Chip (12/$6)<br>
+  <p>PB&amp;J (12/$6)<br>
+  <p>Blueberry Chocolate Wedding (12/$6)<br>
+  <p>Lemon Wedding (12/$6)<br>
+  <p>Oatmeal Apple Rasin (12/$6)<br>
+  <p>&nbsp;</p>
+  <p><u>Furry Kids</u></p>
+  <p>Dog Bone Treats (12/$6)</p>
+</form -->
+</body>
+</html>

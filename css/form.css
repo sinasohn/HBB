@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* form */
+/* 
+---- **** ---- Completion date: 22:59, 17th Jan 2006  ---- ****
+Johan @http://www.zoic.be, another theme based on a form of style by Stu Nicholls
+*/
+
+/* reset all paddings and margins to zero! needed for this form */
+
+
+* 
+{
+	margin:0;
+	padding:0;
+}
+
+form#two 
+{
+	background:#fff url(../images/paper.jpg) top center no-repeat;
+	width:900px;
+	padding: 120px 20px 0 20px;
+	/* center the form */
+	margin: 0 auto;
+}
+	
+form#two fieldset
+{
+	display:block;
+	width:708px;
+	padding:10px;
+	margin: 2em auto 0 auto;
+	/* remove default border styles */
+	border: 0 solid #fafafa;
+	font-size:100%;
+	font-family: "Helvetica", Sans-Serif;
+	line-height: 1.5em;
+	color: blue;
+}
+
+ 
+form#two label, form#two input 
+{
+	display: block;	
+	float: left;
+	margin-bottom: 10px;
+	height: 22px;
+}
+
+form#two input, form#two input:hover, form#two input:focus
+{
+	border: 0 none;
+	background:transparent;	
+}
+
+form#two fieldset#personal input:focus, form#two textarea:focus
+{
+	background: #fef0f1 url(redpix/input_bg_focus.gif) left top no-repeat;
+	border: 1px solid #cfcfcf;
+}
+
+form#two fieldset#personal input 
+{	
+	height: 1.2em;
+	width: 25px;
+}
+
+form#two br 
+{
+	clear: left;
+}
+
+form#two fieldset#opt select 
+{
+	width: 170px; 
+}
+
+form#two p 
+{
+	padding:1em 0 2em 0;
+} 
+
+form#two label
+{
+	padding-right: 25px;
+	font-weight: bold;	
+	text-align: right;
+	color: #d60153;	
+}
+
+form#two fieldset#personal input, fieldset#personal input:hover, form#two textarea  
+{
+	background: #fff url(redpix/input_bg.gif)  left top no-repeat;
+	border: 1px solid #cfcfcf;
+} 
+	
+form#two fieldset#opt select, form#two fieldset#opt legend, form#two fieldset#opt optgroup 
+{
+	background: #fff;
+	font-weight: normal;
+}
+
+form#two legend 
+{	
+	margin-bottom: 0.5em;
+	border-bottom: 0.5em  solid #d60153;
+	font-size: 130%;
+	color: black;
+}
+
+form#two #medical 
+{
+	background: url(redpix/legend_medical_bg.gif) 100% 0 no-repeat;
+}
+
+form#two #personal 
+{
+	background: url(redpix/legend_personal_bg.gif) 100% 0  no-repeat;
+	color: black;
+}
+
+form#two #opt 
+{
+	background: url(redpix/legend_opt_bg.gif) 100% 0 no-repeat;
+}
+
+form#two #current 
+{
+	background: url(redpix/legend_current_bg.gif) 100% 0 no-repeat;
+}
+
+form#two optgroup option 
+{	
+	text-indent: 1.5em; 
+	color: #e1417e;
+	font-weight: 600;	
+}
+
+form#two fieldset#opt optgroup
+{	
+	text-transform: lowercase;
+	color: #e1417e;
+	font-size: 1em;
+}
+
+form#two label:first-letter
+{
+    padding-bottom: 1px; 
+    border-bottom: 1px #d60153 solid;
+    font-weight: bold;
+    text-transform: capitalize;       
+}
+
+form#two textarea 
+{
+	width: 341px; 
+	height: 15em; 
+	background: #fafafa; 
+	overflow: auto;
+}
+
+form#two #button1, form#two #button2  
+{  
+	display: inline;
+	padding: 2px;
+	color: #d60153;
+	background: transparent url(redpix/button_bg.gif) bottom left no-repeat;
+	border: none;
+	cursor: pointer;
+	width: 130px;
+	margin: -6px 35px 0 48px;
+	height: 24px;
+	text-align: center;
+	}
+
+form#two #button1:hover, form#two #button2:hover 
+{
+	color:#e1417e;
+}
+form#two fieldset#personal p {clear:left;}
+
+form#two #col
+{
+	margin-left: 75px;
+	width: 40%;
+	float: left;
+	opacity: 10%
+}
+
+form#two #col2
+{
+	margin-right: 75px;
+	width: 40%;
+	float: right;
+	opacity: 10%
+}
+
+/* IE 5.x WIN and IE6*/   
+   
+/*\*/
+* html body {text-align /**/:center;}
+* html form#two { width /**/: 480px; text-align /**/:left; }
+* html form#two fieldset { width /**/: 374px; }
+* html form#two fieldset#opt select {margin-right /**/: 13em;}
+* html form#two label:first-letter { padding-bottom:0;border: 0 none; 
+text-decoration: underline; }
+/**/
+
+
+/* IE MAC workaround for centering the form elements */
+
+/*\*//*/ 
+form#two { width: 390px;}
+form#two fieldset { width: 334px;} 
+form#two fieldset#opt select {margin-right: 0;}
+/**/ 

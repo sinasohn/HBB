@@ -1,0 +1,24 @@
+@keyframes swinging {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.box img {
+  width: 300px;
+  height: auto;
+}
+
+.box:hover img {
+  -webkit-transform-origin: 50% 0;
+  /* for Safari and older Chrome */
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 2s ease-in-out forwards infinite;
+  animation: swinging 2s ease-in-out forwards infinite;
+}
