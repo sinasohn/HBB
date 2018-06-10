@@ -57,3 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # gems specific to this app, an ecommerce site
 gem 'solidus'
 gem 'solidus_auth_devise'
+gem 'high_voltage', '~> 3.1'
+gem 'bootstrap', '~> 4.1', '>= 4.1.1'
