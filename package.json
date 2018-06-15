@@ -1,5 +1,7 @@
 {
   "name": "HBB",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "js-offcanvas": "^1.2.4"
+  }
 }

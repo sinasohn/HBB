@@ -1,0 +1,69 @@
+<style>
+	body {    
+    background-color: #ccc;
+}
+.l-wrapper {
+  max-width:752px;
+  margin:auto;
+  position:relative;
+  overflow:hidden
+}
+
+.s-cms-content {
+  text-align:center;
+  height:752px;
+  padding:1.618em 1.18em}
+
+.c-offcanvas--absolute,
+c-offcanvas-bg--absolute { position:absolute }  
+
+.c-offcanvas .container { padding-top:1.618em}
+</style>
+
+<script>
+	// https://github.com/vmitsaras/js-offcanvas
+	$( function(){
+	  $('#off-canvas').offcanvas({
+	  "modifiers": "left,overlay,absolute"
+	  });
+	});
+</script>
+
+<div class="l-wrapper">    
+			<nav class="navbar navbar-dark bg-dark">
+				<button class="navbar-toggler js-offcanvas-trigger" data-button-options='{"wrapText":false}' aria-label="Toggle navigation" data-offcanvas-trigger="off-canvas">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">Navbar</a>
+    </nav>
+</div>
+
+<div class="l-wrapper">
+  <div class="c-offcanvas-content-wrap" role="main">
+    <div class="s-cms-content">
+      <h1>Boxed Layout</h1>
+      <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    </div>
+  </div>
+
+  <!--Offcanvas Panels-->
+  <aside class="is-scrollable" id="off-canvas" role="complementary">
+    <div class="container">
+       <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Cras justo odio
+            <span class="badge badge-primary badge-pill">14</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Dapibus ac facilisis in
+            <span class="badge badge-primary badge-pill">2</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Morbi leo risus
+            <span class="badge badge-primary badge-pill">1</span>
+          </li>
+        </ul>
+      </div>
+  </aside>
+
+</div>
