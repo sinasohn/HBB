@@ -16,5 +16,7 @@
 //= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets
+//= require slick.js
+//= require superfish.min 
 
 //= require_tree .
