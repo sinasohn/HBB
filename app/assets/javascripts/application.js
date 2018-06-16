@@ -16,17 +16,5 @@
 //= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets
-//= require main
-//= require easing.min
-//= require hoverIntent
-//= require jquery.ajaxchimp.min
-//= require jquery.magnific-popup.min
-//= require jquery.nice-select.min
-//= require jquery.sticky
-//= reuqire mail-script
-//= require owl.carousel.min.js
-//= require parallax.min.js
-//= require slick.js
-//= require superfish.min 
 
 //= require_tree .
