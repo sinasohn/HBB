@@ -1,6 +1,31 @@
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-@import 'bootstrap-custom';
-// app-specific
-@import "paper_kit";
-@import "demo";
-@import "nucleo_icons";
+//
+// Grid mixins
+//
+
+@import "bootstrap/mixins/breakpoints";
+
+
+// including variables and mixins
+@import "theme/variables";
+@import "theme/mixins";
+@import "theme/flexbox";
+@import "theme/reset";
+
+
+// Custom Scss for theme
+@import "theme/elements";
+@import "theme/header";
+@import "theme/home";
+@import "theme/footer";
+
+
+//  app-specific 
+@import "font-awesome";
+@import "owl.carousel";
+@import "linearicons";
