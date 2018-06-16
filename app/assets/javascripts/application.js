@@ -16,7 +16,7 @@
 //= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets
-//= reuqire main
+//= require main
 //= require easing.min
 //= require hoverIntent
 //= require jquery.ajaxchimp.min
