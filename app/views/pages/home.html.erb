@@ -1,267 +1,435 @@
-<%= render partial: 'pages/home_styling_block' %>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="300">
-        <div class="container">
-			<div class="navbar-translate">
-				<a class="navbar-brand" href="https://www.creative-tim.com">Paper Kit 2</a>
-	            <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-bar"></span>
-					<span class="navbar-toggler-bar"></span>
-					<span class="navbar-toggler-bar"></span>
-	            </button>
-			</div>
-	        <div class="collapse navbar-collapse" id="navbarToggler">
-	            <ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-	                    <a href="../index.html" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a href="../documentation/tutorial-components.html" target="_blank" class="nav-link"><i class="nc-icon nc-book-bookmark"></i>  Documentation</a>
-	                </li>
-					<li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                            <p class="d-lg-none">Twitter</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="d-lg-none">Facebook</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                            <p class="d-lg-none">Instagram</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/CreativeTimOfficial" target="_blank">
-                            <i class="fa fa-github"></i>
-                            <p class="d-lg-none">GitHub</p>
-                        </a>
-                    </li>
-	            </ul>
-	        </div>
-		</div>
-    </nav>
 
-		<div class="page-header" data-parallax="true" style="  background-image: url(<%= asset_path('daniel-olahh.jpg') %>);">
-			<div class="filter"></div>
-			<div class="container">
-			    <div class="motto text-center">
-			        <h1>Example page</h1>
-			        <h3>Start designing your landing page here.</h3>
-			        <br />
-			        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Watch video</a>
-			        <button type="button" class="btn btn-outline-neutral btn-round">Download</button>
-			    </div>
-			</div>
-    	</div>
-        <div class="main">
-			<div class="section text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="title">Let's talk product</h2>
-                        <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
-                        <br>
-                        <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a>
+              <header id="header" id="home">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between d-flex">
+                      <div id="logo">
+                        <a href="#">
+                            <%= image_tag("logo.png") %>
+                        </a>
+                      </div>
+                      <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                          <li class="menu-active"><a href="#home">Home</a></li>
+                          <li><a href="#dish">Dish</a></li>
+                          <li><a href="#chefs">Chefs</a></li>
+                          <li><a href="#blog">Blog</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                          <li class="menu-has-children"><a href="">Pages</a>
+                            <ul>
+                              <li><a href="generic.html">Generic</a></li>
+                              <li><a href="elements.html">Elements</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </nav><!-- #nav-menu-container -->                    
                     </div>
                 </div>
-				<br/><br/>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="info">
-							<div class="icon icon-danger">
-								<i class="nc-icon nc-album-2"></i>
-							</div>
-							<div class="description">
-								<h4 class="info-title">Beautiful Gallery</h4>
-								<p class="description">Spend your time generating new ideas. You don't have to think of implementing.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="info">
-							<div class="icon icon-danger">
-								<i class="nc-icon nc-bulb-63"></i>
-							</div>
-							<div class="description">
-								<h4 class="info-title">New Ideas</h4>
-								<p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="info">
-							<div class="icon icon-danger">
-								<i class="nc-icon nc-chart-bar-32"></i>
-							</div>
-							<div class="description">
-								<h4 class="info-title">Statistics</h4>
-								<p>Choose from a veriety of many colors resembling sugar paper pastels.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="info">
-							<div class="icon icon-danger">
-								<i class="nc-icon nc-sun-fog-29"></i>
-							</div>
-							<div class="description">
-								<h4 class="info-title">Delightful design</h4>
-								<p>Find unique and handmade delightful designs related items directly from our sellers.</p>
-								<a href="#pkp" class="btn btn-link btn-danger">See more</a>
-							</div>
-						</div>
-					</div>
-				</div>
+              </header><!-- #header -->
 
-            </div>
-        </div>
-
-		<div class="section section-dark text-center">
-            <div class="container">
-                <h2 class="title">Let's talk about us</h2>
-				<div class="row">
-    				<div class="col-md-4">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="#avatar">
-                                	<%= image_tag "faces/clem-onojeghuo-3.jpg" %>
-								</a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Henry Ford</h4>
-                                        <h6 class="card-category">Product Manager</h6>
-                                    </div>
-                                </a>
-                                <p class="card-description text-center">
-                                Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-    				</div>
-
-    				<div class="col-md-4">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="#avatar">
-                                	<%= image_tag "faces/joe-gardner-2.jpg" %>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Sophie West</h4>
-                                        <h6 class="card-category">Designer</h6>
-                                    </div>
-                                </a>
-                                <p class="card-description text-center">
-                                A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes an orchestra to play it.
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-    				</div>
-
-    				<div class="col-md-4">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="#avatar">
-                                	<%= image_tag "faces/erik-lucatero-2.jpg" %>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Robert Orben</h4>
-                                        <h6 class="card-category">Developer</h6>
-                                    </div>
-                                </a>
-                                <p class="card-description text-center">
-                                The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
-                                </p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-    				</div>
-    			</div>
-        	</div>
-    	</div>
-
-            <div class="section landing-section">
+            <!-- start banner Area -->
+            <section class="banner-area relative" id="home">
                 <div class="container">
+                    <div class="row fullscreen d-flex align-items-center justify-content-start">
+                        <div class="banner-content col-lg-8 col-md-12">
+                            <h4 class="text-white text-uppercase">Wide Options of Choice</h4>
+                            <h1>
+                                Heather's Baking Bee
+                            </h1>
+                            <p class="text-white">
+                                Yummy homemade goodness.
+                            </p>
+                            <a href="/yummies" class="primary-btn header-btn text-uppercase">Check Our Menu</a>
+                        </div>                                              
+                    </div>
+                </div>
+            </section>
+            <!-- End banner Area -->    
+
+            <!-- Start top-dish Area -->
+            <section class="top-dish-area section-gap" id="dish">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-60 col-lg-8">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Our Top Rated Dishes</h1>
+                                <p>Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>                      
                     <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="text-center">Keep in touch?</h2>
-                            <form class="contact-form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label>Name</label>
-										<div class="input-group">
-	                                        <span class="input-group-addon">
-	                                            <i class="nc-icon nc-single-02"></i>
-	                                        </span>
-	                                        <input type="text" class="form-control" placeholder="Name">
-	                                    </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label>Email</label>
-										<div class="input-group">
-											<span class="input-group-addon">
-												<i class="nc-icon nc-email-85"></i>
-											</span>
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-                                    </div>
+                        <div class="single-dish col-lg-4">
+                            <div class="thumb">
+                                
+                                <%= image_tag("d1.jpg") %>
+                            </div>
+                            <h4 class="text-uppercase pt-20 pb-20">Bread Fruit Cheese Sandwich</h4>
+                            <p>
+                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+                            </p>
+                        </div>
+                        <div class="single-dish col-lg-4">
+                            <div class="thumb">
+                                <%= image_tag("d2.jpg") %>
+                            </div>
+                            <h4 class="text-uppercase pt-20 pb-20">Beef Cutlet with Spring Onion</h4>
+                            <p>
+                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+                            </p>
+                        </div>
+                        <div class="single-dish col-lg-4">
+                            <div class="thumb">
+                                <%= image_tag("d3.jpg") %>
+                            </div>
+                            <h4 class="text-uppercase pt-20 pb-20">Meat with sauce & Vegetables</h4>
+                            <p>
+                                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+                            </p>
+                        </div>                                              
+                    </div>
+                </div>  
+            </section>
+            <!-- End top-dish Area -->
+            
+            <!-- Start video Area -->
+            <section class="video-area">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center flex-column">
+                        <a class="play-btn" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+                            <%= image_tag("play-btn.png") %>
+                        </a>
+                        <h3 class="pt-20 pb-20 text-white">We Always serve the vaping hot and delicious foods</h3>
+                        <p class="text-white">Youtube video will appear in popover</p>
+                    </div>
+                </div>  
+            </section>
+            <!-- End video Area -->
+            
+
+            <!-- Start features Area -->
+            <section class="features-area pt-100" id="feature">
+                <div class="container">
+                    <div class="feature-section">
+                        <div class="row">
+                            <div class="single-feature col-lg-3 col-md-6">
+                                <%= image_tag("f1.png") %>
+                                <h4 class="pt-20 pb-20">Refreshing Breakfast</h4>
+                                <p>
+                                    Lorem ipsum dolor sit ametcons ecteturadipis icing elit.
+                                </p>
+                            </div>
+                            <div class="single-feature col-lg-3 col-md-6">
+                                <%= image_tag("f2.png") %>
+                                <h4 class="pt-20 pb-20">Awesome Lunch</h4>
+                                <p>
+                                    Lorem ipsum dolor sit ametcons ecteturadipis icing elit.
+                                </p>
+                            </div>
+                            <div class="single-feature col-lg-3 col-md-6">
+                                <%= image_tag("f3.png") %>
+                                <h4 class="pt-20 pb-20">Soothing Dinner</h4>
+                                <p>
+                                    Lorem ipsum dolor sit ametcons ecteturadipis icing elit.
+                                </p>
+                            </div>
+                            <div class="single-feature col-lg-3 col-md-6">
+                                <%= image_tag("f4.png") %>
+                                <h4 class="pt-20 pb-20">Rich Quality Buffet</h4>
+                                <p>
+                                    Lorem ipsum dolor sit ametcons ecteturadipis icing elit.
+                                </p>
+                            </div>                                                      
+                        </div>                                          
+                    </div>
+                </div>  
+            </section>
+            <!-- End features Area -->
+
+
+            <!-- Start related Area -->
+            <section class="related-area section-gap">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-60 col-lg-8">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Our Featured Food Menus</h1>
+                                <p>Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>                      
+                    <div class="row justify-content-center">
+                        <div class="active-realated-carusel">
+                            <div class="item row align-items-center">
+                                <div class="col-lg-6 rel-left">
+                                   <h3>
+                                        Fresh & Crispy All the time
+                                   </h3>
+                                   <p class="pt-30 pb-30">
+                                        Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                   </p>
+                                    <a href="#" class="primary-btn header-btn text-uppercase">view full menu</a>                                   
                                 </div>
-                                <label>Message</label>
-                                <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
-                                <div class="row">
-                                    <div class="col-md-4 ml-auto mr-auto">
-                                        <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
-                                    </div>
+                                <div class="col-lg-6">
+                                    <%= image_tag("slider1.jpg", class: "img-fluid")  %> 
+                                </div>
+                            </div>
+                            <div class="item row align-items-center">
+                                <div class="col-lg-6 rel-left">
+                                   <h3>
+                                        Fresh & Crispy All the time
+                                   </h3>
+                                   <p class="pt-30 pb-30">
+                                        Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                   </p>
+                                    <a href="#" class="primary-btn header-btn text-uppercase">view full menu</a>                                   
+                                </div>
+                                <div class="col-lg-6">
+                                    <%= image_tag("slider1.jpg", class: "img-fluid")  %>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <!-- End related Area -->   
+
+
+            <!-- Start team Area -->
+            <section class="team-area section-gap" id="chefs">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-70 col-lg-8">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Meet Our Qualified Chefs</h1>
+                                <p>Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>                      
+                    <div class="row justify-content-center d-flex align-items-center">
+                        <div class="col-md-3 single-team">
+                            <div class="thumb">
+                                <%= image_tag("t1.jpg", class: "img-fluid")  %>
+                                <div class="align-items-center justify-content-center d-flex">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="meta-text mt-30 text-center">
+                                <h4>Ethel Davis</h4>
+                                <p>Managing Director (Sales)</p>                                            
+                            </div>
+                        </div>
+                        <div class="col-md-3 single-team">
+                            <div class="thumb">
+                                <%= image_tag("t2.jpg", class: "img-fluid")  %>
+                                <div class="align-items-center justify-content-center d-flex">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="meta-text mt-30 text-center">
+                                <h4>Rodney Cooper</h4>
+                                <p>Creative Art Director (Project)</p>                  
+                            </div>
+                        </div>  
+                        <div class="col-md-3 single-team">
+                            <div class="thumb">
+                                <%= image_tag("t3.jpg", class: "img-fluid")  %>
+                                <div class="align-items-center justify-content-center d-flex">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="meta-text mt-30 text-center">
+                                <h4>Dora Walker</h4>
+                                <p>Senior Core Developer</p>                    
+                            </div>
+                        </div>  
+                        <div class="col-md-3 single-team">
+                            <div class="thumb">
+                                <%= image_tag("t4.jpg", class: "img-fluid")  %>
+                                <div class="align-items-center justify-content-center d-flex">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="meta-text mt-30 text-center">
+                                <h4>Lena Keller</h4>
+                                <p>Creative Content Developer</p>                   
+                            </div>
+                        </div>                                                                      
+                    </div>
+                </div>  
+            </section>
+            <!-- End team Area -->          
+
+            <!-- start blog Area -->        
+            <section class="blog-area section-gap" id="blog">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-70 col-lg-8">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Latest From Our Blog</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 single-blog">
+                            <div class="thumb">
+                                <%= image_tag("b1.jpg", class: "img-fluid")  %>
+                            </div>
+                            <p class="date">10 Jan 2018</p>
+                            <a href="#"><h4>Cooking Perfect Fried Rice
+                            in minutes</h4></a>
+                            <p>
+                                inappropriate behavior ipsum dolor sit amet, consectetur.
+                            </p>
+                            <div class="meta-bottom d-flex justify-content-between">
+                                <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                                <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                            </div>                                  
+                        </div>
+                        <div class="col-lg-3 col-md-6 single-blog">
+                            <div class="thumb">
+                                <%= image_tag("b2.jpg", class: "img-fluid")  %>
+                            </div>
+                            <p class="date">10 Jan 2018</p>
+                            <a href="#"><h4>Secret of making Heart 
+                            Shaped eggs</h4></a>
+                            <p>
+                                inappropriate behavior ipsum dolor sit amet, consectetur.
+                            </p>
+                            <div class="meta-bottom d-flex justify-content-between">
+                                <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                                <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                            </div>                                  
+                        </div>
+                        <div class="col-lg-3 col-md-6 single-blog">
+                            <div class="thumb">
+                                <%= image_tag("b3.jpg", class: "img-fluid")  %>
+                            </div>
+                            <p class="date">10 Jan 2018</p>
+                            <a href="#"><h4>How to check steak if 
+                            it is tender or not</h4></a>
+                            <p>
+                                inappropriate behavior ipsum dolor sit amet, consectetur.
+                            </p>
+                            <div class="meta-bottom d-flex justify-content-between">
+                                <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                                <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                            </div>                                  
+                        </div>
+                        <div class="col-lg-3 col-md-6 single-blog">
+                            <div class="thumb">
+                                <%= image_tag("b4.jpg", class: "img-fluid")  %>
+                            </div>
+                            <p class="date">10 Jan 2018</p>
+                            <a href="#"><h4>Addiction When Gambling
+                            Becomes A Problem</h4></a>
+                            <p>
+                                inappropriate behavior ipsum dolor sit amet, consectetur.
+                            </p>
+                            <div class="meta-bottom d-flex justify-content-between">
+                                <p><span class="lnr lnr-heart"></span> 15 Likes</p>
+                                <p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+                            </div>                                  
+                        </div>                      
+                    </div>
+                </div>  
+            </section>
+            <!-- end blog Area -->  
+
+            <!-- Start Contact Area -->
+            <section class="contact-area" id="contact">
+                <div class="container-fluid">
+                    <div class="row align-items-center d-flex justify-content-start">
+                        <div class="col-lg-6 col-md-12 contact-left no-padding">
+                            <div style=" width:100%;
+                    height: 545px;" id="map"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-100 pb-100">
+                            <form class="form-area" id="myForm" action="mail.php" method="post" class="contact-form text-right">
+                                <input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text">
+                                <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
+                                <textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                                <button class="primary-btn mt-20">Send Message<span class="lnr lnr-arrow-right"></span></button>
+                                <div class="mt-10 alert-msg">
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-	<footer class="footer section-dark">
-		<div class="container">
-			<div class="row">
-				<nav class="footer-nav">
-					<ul>
-						<li><a href="https://www.creative-tim.com">Creative Tim</a></li>
-						<li><a href="http://blog.creative-tim.com">Blog</a></li>
-						<li><a href="https://www.creative-tim.com/license">Licenses</a></li>
-					</ul>
-				</nav>
-				<div class="credits ml-auto">
-					<span class="copyright">
-						© <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
-					</span>
-				</div>
-			</div>
-		</div>
-	</footer>
+            </section>
+            <!-- End Contact Area -->               
+
+            <!-- start footer Area -->      
+            <footer class="footer-area section-gap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3  col-md-6 col-sm-6">
+                            <div class="single-footer-widget">
+                                <h4 class="text-white">About Us</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-6 col-sm-6">
+                            <div class="single-footer-widget">
+                                <h4 class="text-white">Contact Us</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                                </p>
+                                <p class="number">
+                                    012-6532-568-9746 <br>
+                                    012-6532-569-9748
+                                </p>
+                            </div>
+                        </div>                      
+                        <div class="col-lg-5  col-md-6 col-sm-6">
+                            <div class="single-footer-widget">
+                                <h4 class="text-white">Newsletter</h4>
+                                <p>You can trust us. we only send  offers, not a single spam.</p>
+                                <div class="d-flex flex-row" id="mc_embed_signup">
+
+
+                                      <form class="navbar-form" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
+                                        <div class="input-group add-on">
+                                            <input class="form-control" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+                                            <div style="position: absolute; left: -5000px;">
+                                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                            </div>
+                                          <div class="input-group-btn">
+                                            <button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
+                                          </div>
+                                        </div>
+                                          <div class="info mt-20"></div>                                        
+                                      </form>
+
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p class="footer-text m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>   
+            <!-- End footer Area -->
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+
+            <script src="/js/main.js"></script> 
