@@ -2,6 +2,11 @@
   "name": "HBB",
   "private": true,
   "dependencies": {
-    "js-offcanvas": "^1.2.4"
+    "@rails/webpacker": "3.5",
+    "js-offcanvas": "^1.2.4",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
   }
 }

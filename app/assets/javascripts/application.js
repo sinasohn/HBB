@@ -27,6 +27,5 @@
 //= require parallax.min.js
 //= require slick.js
 //= require superfish.min 
-//= require popper_js
 
 //= require_tree .
