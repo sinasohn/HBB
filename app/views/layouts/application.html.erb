@@ -6,26 +6,25 @@
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <%= render partial: '/application/head'%>
+    <%= render partial: 'head'%>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
 			============================================= -->
 
-			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="/css/main.css">
 
 </head>
 
 <body>
-<!-- start main content -->
-    	<%= yield %>		
+	<!-- start main content -->
+	<%= yield %>		
 
-<!-- finish main content -->
+	<!-- finish main content -->
 
-			<script src="/js/main.js"></script>	
-
-
+	<%= render partial: 'footer'%>
+	<%= render partial: 'javascript'%>
 </body>
 
 </html>
