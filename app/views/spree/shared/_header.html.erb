@@ -1,5 +1,40 @@
 <header id="header" class="row" data-hook>
-  <figure id="logo" class="columns six" data-hook><%= logo img_options: {class: 'img-responsive', width: '138'} %></figure>
+  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
   <%= render partial: 'spree/shared/nav_bar' %>
   <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
+</header>
+
+<hr>
+<header class="nav-locale-us nav-lang-en nav-ssl nav-unrec nav-opt-sprite">
+
+    <div id="navbar" role="navigation" class="nav-sprite-v1 nav-bluebeacon nav-packard-glow">
+    	<%= render partial: 'spree/shared/nav_belt'%>
+        <%= render partial: 'spree/shared/nav_main'%>
+        <div id="nav-subnav-toaster"></div>
+        <script type="text/javascript">
+            window.navmet.tmp = +new Date();
+        </script>
+        <div id="nav-subnav" style="">
+
+        </div>
+        <script type="text/javascript">
+            window.navmet.push({
+                key: 'Subnav',
+                end: +new Date(),
+                begin: window.navmet.tmp
+            });
+        </script>
+        <script type="text/javascript">
+            window.navmet.tmp = +new Date();
+        </script>
+        <script type="text/javascript">
+            window.navmet.push({
+                key: 'PlatinumSubnav',
+                end: +new Date(),
+                begin: window.navmet.tmp
+            });
+        </script>
+
+    </div>
+
 </header>
