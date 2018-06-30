@@ -56,11 +56,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gems specific to this app, an ecommerce site
-gem 'solidus'
-gem 'solidus_auth_devise'
 gem 'high_voltage', '~> 3.1'
 gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.12', '>= 1.12.9'
 gem 'webpacker', '~> 3.5', '>= 3.5.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+
+# gems specific to using solidus
+gem 'solidus', '~> 2.6'
+gem 'solidus_auth_devise'
