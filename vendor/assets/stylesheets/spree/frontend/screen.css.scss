@@ -5,7 +5,9 @@
 //= depend_on_asset "spree/frontend/cart.png"
 
 @import 'foundation-sites/assets/foundation-prototype.scss';
+@import 'spree/frontend/foundation-application-settings';
 @import 'spree/frontend/variables';
+@import "spree/frontend/header";
 @import 'font-awesome';
   
 /* Add imports of custom sass/scss files here */
