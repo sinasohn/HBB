@@ -1,0 +1,31 @@
+
+<div id="navbar" role="navigation" class="nav-sprite-v1 nav-bluebeacon nav-packard-glow">
+
+    <%= render partial: 'spree/shared/medium/nav_belt/nav_belt'%>
+    <%= render partial: 'spree/shared/medium/nav_main/nav_main'%>
+    <div id="nav-subnav-toaster"></div>
+    <script type="text/javascript">
+        window.navmet.tmp = +new Date();
+    </script>
+    <div id="nav-subnav" style="">
+
+    </div>
+    <script type="text/javascript">
+        window.navmet.push({
+            key: 'Subnav',
+            end: +new Date(),
+            begin: window.navmet.tmp
+        });
+    </script>
+    <script type="text/javascript">
+        window.navmet.tmp = +new Date();
+    </script>
+    <script type="text/javascript">
+        window.navmet.push({
+            key: 'PlatinumSubnav',
+            end: +new Date(),
+            begin: window.navmet.tmp
+        });
+    </script>
+
+</div>
