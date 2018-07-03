@@ -1,12 +1,22 @@
-    <div id="nav-belt">
-
+    <div id="nav-belt" class="grid-x">
+        <div class="cell medium-2">
         <%= render partial: 'spree/shared/medium/nav_belt/left'%>
-        <%= render partial: 'spree/shared/medium/nav_belt/right'%>
-        <%= render partial: 'spree/shared/medium/nav_belt/fill'%>
-        <%= render partial: 'spree/shared/medium/nav_flyout_anchor/nav_flyout_anchor'%>
-        <div id="nav-flyout-iss-anchor">
-            <div id="nav-flyout-searchAjax" class="nav-issFlyout nav-flyout">
-                <div class="nav-template nav-flyout-content"></div>
+            
+        </div>
+        <div class="cell auto">
+        <%= render partial: 'spree/shared/medium/nav_belt/fill'%>            
+        </div>
+        <div class="cell medium-3">
+        <%= render partial: 'spree/shared/medium/nav_belt/right'%>            
+        </div>
+        <div class="cell">
+        <%= render partial: 'spree/shared/medium/nav_flyout_anchor/nav_flyout_anchor'%>            
+        </div>
+        <div class="cell">
+            <div id="nav-flyout-iss-anchor">
+                <div id="nav-flyout-searchAjax" class="nav-issFlyout nav-flyout">
+                    <div class="nav-template nav-flyout-content"></div>
+                </div>
             </div>
         </div>
     </div>
