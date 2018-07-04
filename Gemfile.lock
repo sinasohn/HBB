@@ -54,6 +54,10 @@ GEM
       activerecord (>= 4.0.0, < 5.3)
     bcrypt (3.1.12)
     bindex (0.5.0)
+    bootstrap (4.1.1)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (10.0.2)
     cancancan (2.2.0)
@@ -148,7 +152,7 @@ GEM
       i18n (>= 0.6.4, < 1.1)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.8.3)
+    nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     paperclip (5.3.0)
@@ -314,7 +318,7 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.13)
+    uglifier (4.1.14)
       execjs (>= 0.3.0, < 3)
     warden (1.2.7)
       rack (>= 1.0)
@@ -337,6 +341,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap (~> 4.1, >= 4.1.1)
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
@@ -346,7 +351,6 @@ DEPENDENCIES
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
-  popper_js (~> 1.12, >= 1.12.9)
   puma (~> 3.7)
   rails (~> 5.1.4)
   sass-rails (~> 5.0)
