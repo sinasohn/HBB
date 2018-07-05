@@ -1,0 +1,71 @@
+<div class="reveal" id="delivery_location_modal" data-reveal>
+<!--  -->
+	<div class="a-popover-header" style="">
+	    <button data-action="a-popover-close" 
+	    	class=" a-button-close-a11y a-button-close a-declarative" 
+	    	aria-label="Close">
+	    	<i class="a-icon a-icon-close"></i>
+	    </button>
+	    <h4 class="a-popover-header-content" id="a-popover-header-3">
+	    	Choose your delivery location
+	    </h4>
+	</div>
+
+	<div class="a-popover-inner" id="a-popover-content-3" style="overflow-y: auto; height: auto;">
+
+	    <div id="Condo">
+	        <div id="GLOWFeature_BusinessGroupSelector">
+	            <div class="aok-hidden">Feature requested to not be shown</div>
+	        </div>
+	        <div id="GLOWFeature_AddressList">
+	            <div id="GLUXAddressBlock">
+	                <div class="a-section a-padding-none a-row a-spacing-small"><span class="a-text a-color-secondary a-spacing-medium a-size-small">Delivery options and delivery speeds may vary for different locations</span></div><span class="a-button a-button-primary a-button-span12" id="GLUXSignInButton"><span class="a-button-inner a-declarative" data-action="GLUXSignInAction"><input class="a-button-input" aria-label="Sign in to see your addresses" type="submit"><span class="a-button-text" aria-hidden="true">Sign in to see your addresses</span></span>
+	                </span>
+	            </div>
+	            <div class="GLUX_Hidden" id="GLUXHiddenSuccessDialog"><span class="a-list-item"><span class="GLUX_Block a-size-medium GLUX_Success_Row a-row"><div class="GLUX_Pin_Image"></div><div class="a-text-left a-column a-span11 a-span-last"><div id="GLUXHiddenSuccessSelectedAddressPlaceholder"></div></div></span></span>
+	                <div class="a-size-small a-text a-color-tertiary a-spacing-top-base">Delivery options may vary for different locations</div>
+	                <div class="a-size-small a-text a-color-tertiary GLUX_Hidden" id="GLUXHiddenSuccessFooter"><span class="a-button a-column a-button-primary a-button-span4"><span class="a-button-inner a-declarative" data-action="GLUXConfirmAction"><input class="a-button-input" id="GLUXConfirmClose" aria-labelledby="GLUXConfirmClose-announce" type="submit"><span class="a-button-text" id="GLUXConfirmClose-announce">Continue</span></span>
+	                    </span>
+	                </div>
+	            </div>
+	            <div class="GLUX_Inline" id="GLUXSpecifyLocationDiv">
+	                <div class="a-divider a-divider-break a-spacing-top-base">
+	                    <h5>or enter a US zip code</h5></div>
+	                <div class="a-row a-spacing-top-micro">
+	                    <div class="GLUX_Hidden" id="GLUXZipInputSection">
+	                        <div class="a-column a-span8">
+	                            <input class="GLUX_Full_Width a-declarative" maxlength="5" value="95050" id="GLUXZipUpdateInput" aria-label="or enter a US zip code" data-action="GLUXPostalInputAction" type="text">
+	                        </div>
+	                        <div class="a-column a-span4 a-span-last" role="button"><span class="a-button a-button-span12" id="GLUXZipUpdate"><span class="a-button-inner a-declarative" data-action="GLUXPostalUpdateAction"><input class="a-button-input" aria-labelledby="GLUXZipUpdate-announce" type="submit"><span class="a-button-text" aria-hidden="true" id="GLUXZipUpdate-announce">Apply</span></span>
+	                            </span>
+	                        </div><span class="GLUX_Hidden" id="GLUXZipError" role="alert"><div class="a-box a-alert-inline a-alert-inline-error"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div>Please enter a valid US zip code</div></div></div></span></div>
+	                    <div class="a-box a-button-toggle a-text-left a-row a-button-selected" id="GLUXZipConfirmationSection">
+	                        <div class="a-button-inner a-padding-base" tabindex="0">Deliver to&nbsp;<span class="a-text-bold a-size-base-plus" id="GLUXZipConfirmationValue">95050</span>&nbsp;<a class="a-link-normal a-declarative" id="GLUXChangePostalCodeLink" data-action="GLUXChangePostalCodeLinkAction" role="link" tabindex="0">Change</a></div>
+	                    </div>
+	                </div>
+	                <div class="a-divider a-divider-break a-spacing-top-base">
+	                    <h5>or</h5></div>
+	                <div class=" a-declarative">
+	                	<span class="a-dropdown-container">
+	                		<%= render partial: 'country_select'%>
+	                		
+	                	<span class="a-button-dropdown a-button a-button-span12" tabindex="-1" id="GLUXCountryListDropdown"><span class="a-button-inner"><span class="a-button-text a-declarative" tabindex="0" role="radiogroup" data-action="a-dropdown-button"><span class="a-dropdown-prompt" id="GLUXCountryValue">Ship outside the US</span></span><i class="a-icon a-icon-dropdown"></i></span>
+	                    </span>
+	                    </span>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<div class="a-popover-footer" style="">
+	    <span class="a-declarative" data-action="a-popover-close" data-a-popover-close="{}">
+	        <span class="a-button a-button-primary">
+	            <span class="a-button-inner">
+	                <button name="glowDoneButton" class="a-button-text button" data-close aria-label="Close reveal" type="button">Done</button>
+	            </span>
+	        </span>
+	    </span>
+	</div><!--  -->
+</div>

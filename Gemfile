@@ -57,7 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gems specific to this app, an ecommerce site
 gem 'high_voltage', '~> 3.1'
-gem 'bootstrap', '~> 4.1', '>= 4.1.1'
+# gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails'
 # gem 'popper_js', '~> 1.12', '>= 1.12.9'
 gem 'webpacker', '~> 3.5', '>= 3.5.3'

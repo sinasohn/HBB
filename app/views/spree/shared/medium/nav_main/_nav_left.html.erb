@@ -1,13 +1,20 @@
     <div class="grid-x">
         <div id="nav-global-location-slot" class="cell">
-            <span class="a-declarative" data-a-modal="{&quot;width&quot;:375,&quot;closeButton&quot;:&quot;false&quot;,&quot;popoverLabel&quot;:&quot;Choose your delivery location&quot;,&quot;name&quot;:&quot;glow-modal&quot;,&quot;url&quot;:&quot;/gp/glow/get-address-selections.html?selectedLocationType=POSTAL_CODE&amp;selectedLocationValue=95050&amp;deviceType=desktop&amp;pageType=Gateway&amp;storeContext=generic&quot;,&quot;footer&quot;:&quot;<span class=\&quot;a-declarative\&quot; data-action=\&quot;a-popover-close\&quot; data-a-popover-close=\&quot;{}\&quot;><span class=\&quot;a-button a-button-primary\&quot;><span class=\&quot;a-button-inner\&quot;><button name=\&quot;glowDoneButton\&quot; class=\&quot;a-button-text\&quot; type=\&quot;button\&quot;>Done</button></span></span></span>&quot;,&quot;header&quot;:&quot;Choose your delivery location&quot;}" data-action="a-modal">
-            <a class="nav-a nav-a-2 a-popover-trigger a-declarative" tabindex="35">
-                <div class="nav-sprite" id="nav-packard-glow-loc-icon"></div>
-                <div id="glow-ingress-block"><span class="nav-line-1" id="glow-ingress-line1">Deliver to</span><span class="nav-line-2" id="glow-ingress-line2">Santaclara 95050‌</span></div>
-            </a>
+            <span >
+                <a class="nav-a nav-a-2 a-popover-trigger a-declarative" 
+                tabindex="35" 
+                data-open="delivery_location_modal">
+                    <!-- <div class="nav-sprite" id="nav-packard-glow-loc-icon"></div> -->
+                    <div id="glow-ingress-block">
+                        <%= fa_icon "map-marker", class: "nav-line-1" %>
+                        <span class="nav-line-1" id="glow-ingress-line1">Deliver to</span>
+                        <span class="nav-line-2" id="glow-ingress-line2">Santaclara 95050‌</span>
+                    </div>
+                </a>
             </span>
             <input data-addnewaddress="add-new" id="unifiedLocation1ClickAddress" name="dropdown-selection" value="add-new" type="hidden">
             <input data-addnewaddress="add-new" id="ubbShipTo" name="dropdown-selection-ubb" value="add-new" type="hidden">
+            <%= render partial: 'spree/shared/choose_delivery_location_popup'%>
         </div>
 
     </div>

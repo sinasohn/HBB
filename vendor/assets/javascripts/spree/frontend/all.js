@@ -8,3 +8,5 @@
 //= require jquery_ujs
 //= require spree/frontend
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
