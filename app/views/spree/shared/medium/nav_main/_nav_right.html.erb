@@ -1,30 +1,20 @@
-<div class="grid-x">
-    <script type="text/javascript">
-//        window.navmet.tmp = +new Date();
-    </script>
-
-    <div id="nav-tools" class="cell">
-
-        <a href="/gp/customer-preferences/select-language/ref=topnav_lang?ie=UTF8&amp;preferencesReturnUrl=%2F" id="icp-nav-flyout" class="nav-a nav-a-2 icp-link-style-2">
-            <span class="icp-nav-link-inner">
-<span class="nav-line-1">
-  <span class="icp-nav-globe-img-2"></span>
-            <span class="icp-nav-language">EN</span>
-            </span>
-            <span class="nav-line-2">&nbsp;
-  <span class="nav-icon nav-arrow" style="visibility: visible;"></span>
-            </span>
-            </span>
-            <span class="icp-nav-link-border"></span>
+<div id="nav-tools">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li>
+        <a href="#" id="nav-link-shopall">
+            <span class="nav-line-1"></span>
+            <span class="nav-line-2">Account &amp; Lists</span>
         </a>
-        <a href="/gp/navigation/redirector.html/ref=sign-in-redirect?ie=UTF8&amp;associationHandle=usflex&amp;currentPageURL=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&amp;pageType=Gateway&amp;switchAccount=&amp;yshURL=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_ya_signin" class="nav-a nav-a-2" data-nav-ref="nav_ya_signin" data-nav-role="signin" data-ux-jq-mouseenter="true" id="nav-link-accountList" tabindex="61"><span class="nav-line-1">Hello. Sign in</span><span class="nav-line-2">Account &amp; Lists<span class="nav-icon nav-arrow" style="visibility: visible;"></span></span><span class="nav-line-3">Sign in</span><span class="nav-line-4">Account &amp; Lists</span></a><a href="/gp/css/order-history/ref=nav_nav_orders_first" class="nav-a nav-a-2 nav-single-row-link" id="nav-orders" tabindex="62"><span class="nav-line-1"></span><span class="nav-line-2">Orders</span></a><a href="/gp/prime/ref=nav_prime_try_btn" class="nav-a nav-a-2 nav-single-row-link" data-ux-jq-mouseenter="true" id="nav-link-prime" tabindex="63"><span class="nav-line-1"></span><span class="nav-line-2">Try Prime<span class="nav-icon nav-arrow" style="visibility: visible;"></span></span></a><a href="/gp/cart/view.html/ref=nav_cart" aria-label="0 items in cart" class="nav-a nav-a-2" id="nav-cart" tabindex="64"><span aria-hidden="true" class="nav-line-1"></span><span aria-hidden="true" class="nav-line-2">Cart<span class="nav-icon nav-arrow"></span></span><span class="nav-cart-icon nav-sprite"></span><span id="nav-cart-count" aria-hidden="true" class="nav-cart-count nav-cart-0">0</span></a>
-    </div>
-    <script type="text/javascript">
-/*        window.navmet.push({
-            key: 'Tools',
-            end: +new Date(),
-            begin: window.navmet.tmp
-        }); */
-    </script>
-    
+        <ul class="menu" >
+          <li>patial to display panel for sign-in button and your lists and your account links
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><%= link_to "Cart", cart_path %></li>
+    </ul>
+
+
 </div>
+
