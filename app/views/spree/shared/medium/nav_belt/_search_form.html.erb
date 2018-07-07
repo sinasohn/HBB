@@ -35,7 +35,7 @@
             <span id="searchDropdownDescription" style="display:none">Select the department you want to search in</span>
   <% cache [I18n.locale, @taxons] do %>
     <%= select_tag :taxon,
-          options_for_select([[t('spree.all_departments'), '']] +
+          options_for_select([[t('spree.all'), '']] +
                                 @taxons.map {|t| [t.name, t.id]},
                                 @taxon ? @taxon.id : params[:taxon]), 'aria-label' => 'Taxon', 'class' => "nav-search-dropdown searchSelect" %>
   <% end %>
