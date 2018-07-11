@@ -26,7 +26,7 @@
   <div data-sticky data-options="marginTop:0;">
     <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
       <div class="title-bar-left">
-          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+          <button class="menu-icon" type="button" data-toggle="offCanvasLeft1" ></button>
           <div class="title-bar-title">HBB</div>            
       </div>
       <div class="title-bar-right">
@@ -35,11 +35,6 @@
                     <a href="/gp/aw/ya/ref=navm_hdr_profile" class="nav-a" id="nav-button-avatar" style="color: white">
                 <!-- <i class="nav-icon nav-icon-a11y nav-sprite">your account</i> -->
                         <%= fa_icon "user 2x" %>
-                    </a>
-                </li>
-                <li>
-                    <a href="/gp/aw/ya/ref=navm_hdr_profile" class="nav-a" id="nav-button-avatar" style="color: white;">
-                        <%= fa_icon "map-marker 2x" %>
                     </a>
                 </li>
                 <li>
@@ -81,7 +76,7 @@
         id="nav-subnav-container"  
         style="background-color: #0a0a0a; color: white;">
         <div class="a-declarative cell" data-action="glow-sheet-trigger" id="nav-global-location-slot">
-<div class="grid-x">
+<div class="grid-x" data-toggle="offCanvasBottom1" style="cursor: pointer;">
   <div class="cell small shrink"><%= fa_icon "map-marker", class: "nav-line-1" %>&nbsp;</div>
   <div class="cell auto" id="glow-ingress-block">
                       <span class="nav-single-line" id="glow-ingress-single-line">
@@ -96,4 +91,16 @@
 
     <div id="nav-subnav-toaster"></div>
 
+</div>
+
+<div class="cell">
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas position-left" id="offCanvasLeft1" data-off-canvas>
+      <%= render partial: 'spree/shared/small_only/hmenu'%>
+    </div>
+    <div class="off-canvas position-bottom" id="offCanvasBottom1" data-off-canvas>
+      <!-- Your menu or Off-canvas content goes here -->
+      <%= render partial: 'spree/shared/small_only/choose_delivery_location_setting'%>
+    </div>
+  </div>
 </div>
