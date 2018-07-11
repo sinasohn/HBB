@@ -21,8 +21,11 @@
   z-index: 5;
 }
 
-
+.nav-a {
+  color: white;
+}
 </style>
+
   <div data-sticky data-options="marginTop:0;">
     <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
       <div class="title-bar-left">
@@ -38,9 +41,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/gp/aw/ya/ref=navm_hdr_profile" class="nav-a" id="nav-button-avatar" style="color: white;">
+                  <%= link_to cart_path, id: "av-button-avatar", class: "nav-a" do %>
                         <%= fa_icon "shopping-basket 2x" %>
-                    </a>
+                  <% end %>
                 </li>
             </ul>
       </div>
