@@ -59,7 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'high_voltage', '~> 3.1'
 # gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails'
-gem 'popper_js', '~> 1.12', '>= 1.12.9'
+# gem 'popper_js', '~> 1.12', '>= 1.12.9'
 gem 'webpacker', '~> 3.5', '>= 3.5.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 

@@ -7,4 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require spree/frontend
+//= require spree/frontend/jquery.nice-select.min
 //= require_tree .
+
+$(function(){ $(document).foundation(); });

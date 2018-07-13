@@ -1,0 +1,20 @@
+    <div class="grid-x">
+        <div id="nav-global-location-slot" class="cell">
+            <span >
+                <a class="nav-a nav-a-2 a-popover-trigger a-declarative" 
+                tabindex="35" 
+                data-open="delivery_location_modal">
+                    <!-- <div class="nav-sprite" id="nav-packard-glow-loc-icon"></div> -->
+                    <div id="glow-ingress-block">
+                        <%= fa_icon "map-marker", class: "nav-line-1" %>
+                        <span class="nav-line-1" id="glow-ingress-line1">Deliver to</span>
+                        <span class="nav-line-2" id="glow-ingress-line2">Santaclara 95050‌</span>
+                    </div>
+                </a>
+            </span>
+            <input data-addnewaddress="add-new" id="unifiedLocation1ClickAddress" name="dropdown-selection" value="add-new" type="hidden">
+            <input data-addnewaddress="add-new" id="ubbShipTo" name="dropdown-selection-ubb" value="add-new" type="hidden">
+            <%= render partial: 'spree/shared/choose_delivery_location_popup'%>
+        </div>
+
+    </div>

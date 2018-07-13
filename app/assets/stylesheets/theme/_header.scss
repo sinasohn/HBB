@@ -1,3 +1,28 @@
+#nav-flyout-iss-anchor, #nav-flyout-iss-timeline-anchor, #nav-flyout-iss-topCategories-anchor {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    line-height: 0;
+    zoom: 1;
+    z-index: 100;
+
+}
+
+#nav-flyout-anchor {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    line-height: 0;
+    zoom: 1;
+    z-index: 100;
+
+}
 
 /*--------------------------------------------------------------
 # Header
