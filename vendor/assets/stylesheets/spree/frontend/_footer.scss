@@ -153,3 +153,14 @@ div.navFooterLine {
     line-height: 18px;
     white-space: nowrap;
 }
+#navFooter.navLeftFooter .navFooterDescLine {
+    background-color: #131a22;
+    padding: 30px 0;
+    margin: 30px 0 0;
+}
+#navFooter.navLeftFooter .navFooterCopyright {
+    background-color: #131a22;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px 0 30px;
+}
