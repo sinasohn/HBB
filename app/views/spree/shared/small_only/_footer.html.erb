@@ -1,36 +1,28 @@
 <div id="nav-ftr">
-	<div class="grid-x" style="background-color: #0d141e;" >
-		<div class="cell small-4"></div>
-		<div class="cell small-4 float-center">
-			<%= link_to "Go To Top", '#top', style: "color: #fff;" %>
-		</div>
-		<div class="cell small-4"></div>
-	</div>
+	<a id="nav-ftr-gototop" class="nav-a" href="#top">
+		<%= fa_icon "caret-up"%><b class="nav-b">Top of page</b>
+	</a>
 
 	<div id="nav-ftr-links" style="background-color: #232f3e;">
 		<div class="grid-x grid-margin-x">
 			<div class="cell small-1"></div>
 			<div class="cell small-5"><%= link_to "Home", root_path, class: "nav-a" %></div>
-			<div class="cell small-1"></div>
-			<div class="cell small-5"><%= link_to_cart %></div>
+			<div class="cell small-6"><%= link_to_cart %></div>
 		</div>
 		<div class="grid-x grid-margin-x">
 			<div class="cell small-1"></div>
 			<div class="cell small-5"><%= link_to "Your Orders", root_path, class: "nav-a"  %></div>
-			<div class="cell small-1"></div>
-			<div class="cell small-5"><%= link_to 'Gift Cards, Registry', root_path, class: "nav-a" %></div>
+			<div class="cell small-6"><%= link_to 'Gift Cards & Registry', root_path, class: "nav-a" %></div>
 		</div>
 		<div class="grid-x grid-margin-x">
 			<div class="cell small-1"></div>
 			<div class="cell small-5"><%= link_to "Your Lists", root_path, class: "nav-a" %></div>
-			<div class="cell small-1"></div>
-			<div class="cell small-5"><%= link_to "Your Account", root_path, class: "nav-a" %></div>
+			<div class="cell small-6"><%= link_to "Your Account", root_path, class: "nav-a" %></div>
 		</div>
 		<div class="grid-x grid-margin-x">
 			<div class="cell small-1"></div>
 			<div class="cell small-5"><%= link_to "Customer Service", root_path, class: "nav-a" %></div>
-			<div class="cell small-1"></div>
-			<div class="cell small-5"><%= link_to "Help", root_path, class: "nav-a" %></div>
+			<div class="cell small-6"><%= link_to 'About', '/about' %></div>
 		</div>
 
 	</div>
@@ -49,8 +41,8 @@
 
 	<!-- start static page links -->
 	<ul class="menu align-center nav-ftr-horiz">
-		  <li><%= link_to "Conditions of Use", login_path, class: "nav-a" %></li>
-		  <li><%= link_to "Privacy Notice", login_path, class: "nav-a" %></li>
+		  <li class="nav-li"><%= link_to "Conditions of Use", login_path, class: "nav-a" %></li>
+		  <li class="nav-li"><%= link_to "Privacy Notice", login_path, class: "nav-a" %></li>
 	</ul>
 	<!-- finish static page links -->
 	<!-- start (c)  -->

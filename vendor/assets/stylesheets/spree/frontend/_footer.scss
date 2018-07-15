@@ -1,3 +1,11 @@
+#nav-ftr {
+
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+
+}
+
 .nav-ftr-batmobile #nav-ftr {
     background-color:#0d141e;
 }
@@ -75,6 +83,9 @@ background-color:#232f3e;;
 }
 #nav-ftr-links .cart-info {
     color: #fff;
+    font-size: 15px;
+    line-height: 16px;
+    outline: 0;
 }
 .nav-ftr-batmobile #nav-ftr-auth {
 
@@ -83,4 +94,19 @@ background-color:#232f3e;;
     color: #fff;
     font: 16px Arial;
 
+}
+
+.nav-ftr-batmobile .nav-ftr-horiz .nav-a {
+    color: #ccc;
+}
+
+.nav-ftr-batmobile #nav-ftr-links.nav-ftr-links-two-column .nav-li .nav-ftr-text {
+    white-space: normal;
+    font: 14px arial;
+}
+
+#nav-ftr-links .nav-a {
+    font-size: 15px;
+    line-height: 16px;
+    outline: 0;
 }
