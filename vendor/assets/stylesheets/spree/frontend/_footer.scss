@@ -1,3 +1,4 @@
+// small-only
 #nav-ftr {
 
     font-family: arial,sans-serif;
@@ -109,4 +110,46 @@ background-color:#232f3e;;
     font-size: 15px;
     line-height: 16px;
     outline: 0;
+}
+
+// medium and up
+#navFooter.navLeftFooter {
+    background-color: #232f3e;
+    color: #949494;
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
+ 
+     .navFooterColHead {
+        font-family: arial,sans-serif;
+        color: #333;
+        font-size: 16px;
+        margin: 6px 0 14px 0;
+        white-space: nowrap;
+    }
+}
+#navFooter.navLeftFooter .navFooterColHead {
+    font-weight: 700;
+    color: #fff;
+}
+#navFooter.navLeftFooter .navFooterLinkCol ul li {
+    margin: 0 0 10px;
+}
+#navFooter.navLeftFooter a.nav_a:link, #navFooter.navLeftFooter a.nav_a:visited, #navFooter.navLeftFooter li.nav_a_carat span.nav_a_carat {
+    color: #ddd;
+}
+#navFooter.navLeftFooter .navFooterBackToTop {
+    margin-bottom: 40px;
+    background-color: #37475a;
+}
+#navFooter.navLeftFooter .navFooterBackToTop .navFooterBackToTopText {
+    color: #fff;
+}
+div.navFooterLine {
+    font-family: arial,sans-serif;
+    color: #767676;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+    white-space: nowrap;
 }
