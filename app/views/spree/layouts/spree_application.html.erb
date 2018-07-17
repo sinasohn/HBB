@@ -14,20 +14,25 @@
       <%= render partial: 'spree/shared/header' %>
 
       <div id="wrapper" class="row" data-hook>
+        <div class="grid-container">
+          <div class="grid-x grid-margin-x">
+            <div class="cell medium-2">
+              <%= taxon_breadcrumbs(@taxon) %>
 
-        <%= taxon_breadcrumbs(@taxon) %>
+              <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+            </div>
+            <div class="cell medium-10">
+              <div  id="content"class="cell medium-10" data-hook>
+                <%= flash_messages %>
+                <%= yield %>
+                <%= yield :templates %>
+              </div>
+            </div>
+          </div>
 
-        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
-
-        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
-          <%= flash_messages %>
-          <%= yield %>
-        </div>
-
-        <%= yield :templates %>
-      <%= render partial: 'spree/shared/footer' %>
 
        </div>
+       <%= render partial: 'spree/shared/footer' %>            
 
     </div>
     <script type="text/javascript">
