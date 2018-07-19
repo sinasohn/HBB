@@ -27,7 +27,7 @@ module Spree
         end
       end
 
-      content_tag(:nav, content_tag(:ul, raw(items.map(&:mb_chars).join), class: breadcrumb_class, itemscope: '', itemtype: 'https://schema.org/BreadcrumbList'), id: 'breadcrumbs', class: 'sixteen columns')
+      content_tag(:nav, content_tag(:ul, raw(items.map(&:mb_chars).join), class: breadcrumb_class, itemscope: '', itemtype: 'https://schema.org/BreadcrumbList'), id: 'breadcrumbs')
     end
 
     def taxons_tree(root_taxon, current_taxon, max_level = 1)
