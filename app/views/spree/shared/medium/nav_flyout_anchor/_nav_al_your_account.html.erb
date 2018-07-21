@@ -18,3 +18,14 @@
     <a href="/localservices/ya/servicerequests/ref=nav_youraccount_desktop_vas_requestlist" class="nav-link nav-item">
         <span class="nav-text">Your Service Requests</span>
     </a>
+
+<% if signed_in? %>
+    <%= link_to  destroy_spree_user_session_path, 
+        class: "nav-link nav-item", 
+        method: :get do %>
+            <span class="nav-text">Sign out</span>
+    <% end %>
+    <a href="/localservices/ya/servicerequests/ref=nav_youraccount_desktop_vas_requestlist" class="nav-link nav-item">
+    </a>
+    
+<% end %>
