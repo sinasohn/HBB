@@ -2,10 +2,13 @@
     <a href="/gp/css/homepage.html/ref=nav_youraccount_ya" class="nav-link nav-item">
         <span class="nav-text">Your Account</span>
     </a>
-    <a href="/gp/css/order-history/ref=nav_youraccount_orders" class="nav-link nav-item" id="nav_prefetch_yourorders">
+    <%= link_to account_path do %>
+        <span class="nav-text">Your Account</span>
+    <% end %>
+    <%= link_to account_path do %>
         <span class="nav-text">Your Orders</span>
-    </a>
-    <a href="/gp/registry/wishlist/ref=nav_youraccount_wl?ie=UTF8&amp;requiresSignIn=1" class="nav-link nav-item">
+    <% end %>
+<!--     <a href="/gp/registry/wishlist/ref=nav_youraccount_wl?ie=UTF8&amp;requiresSignIn=1" class="nav-link nav-item">
         <span class="nav-text">Your Lists</span>
     </a>
     <a href="/gp/yourstore/ref=nav_youraccount_recs" class="nav-link nav-item">
@@ -17,7 +20,7 @@
     <a href="/yourmembershipsandsubscriptions/ref=nav_youraccount_digital_subscriptions" class="nav-link nav-item"><span class="nav-text">Memberships &amp; Subscriptions</span></a>
     <a href="/localservices/ya/servicerequests/ref=nav_youraccount_desktop_vas_requestlist" class="nav-link nav-item">
         <span class="nav-text">Your Service Requests</span>
-    </a>
+    </a> -->
 
 <% if signed_in? %>
     <%= link_to  destroy_spree_user_session_path, 
