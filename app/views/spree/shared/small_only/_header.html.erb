@@ -35,10 +35,9 @@
       <div class="title-bar-right">
             <ul class="menu align-right">
                 <li>
-                    <a href="/gp/aw/ya/ref=navm_hdr_profile" class="nav-a" id="nav-button-avatar" style="color: white">
-                <!-- <i class="nav-icon nav-icon-a11y nav-sprite">your account</i> -->
-                        <%= fa_icon "user 2x" %>
-                    </a>
+                  <%= link_to account_path do %>
+                        <%= fa_icon "user 2x",  class: "nav-a", style: "color: white" %>
+                  <% end %>
                 </li>
                 <li>
                   <%= link_to cart_path, id: "av-button-avatar", class: "nav-a" do %>

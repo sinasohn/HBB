@@ -1,16 +1,22 @@
 
+<% if signed_in? %>
 
+<% else %>
   <div class="grid-x grid-margin-x">
     <div class="auto">
-	<div id="nav-flyout-ya-signin" class="nav-flyout-content cell vertical-center">
-	    <a href="/gp/navigation/redirector.html/ref=sign-in-redirect?ie=UTF8&amp;associationHandle=usflex&amp;currentPageURL=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_signin&amp;pageType=Gateway&amp;switchAccount=&amp;yshURL=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_signin" rel="nofollow" class="nav-action-button" data-nav-role="signin" data-nav-ref="nav_signin">
-    		<span class="nav-action-inner button">Sign in</span>
-    	</a>
-    <div id="nav-flyout-ya-newCust" class="nav_pop_new_cust nav-flyout-content vertical-center">
-    	New customer?
-        <a href="https://www.amazon.com/ap/register?_encoding=UTF8&amp;openid.assoc_handle=usflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_newcust" rel="nofollow" class="nav-a vertical-center">Start here.</a>
+       <div id="nav-flyout-ya-signin" class="nav-flyout-content cell vertical-center">
+            <%= link_to login_path, 
+                class: "nav-action-button", 
+                data: {"nav-role": "signin", "nav-ref": "nav_signin"} do %>
+                    <span class="nav-action-inner button">Sign in</span>
+            <% end %>
+        <div id="nav-flyout-ya-newCust" class="nav_pop_new_cust nav-flyout-content vertical-center">
+            New customer?
+            <%= link_to "Start here.", new_spree_user_registration_path %>
+
+        </div>
     </div>
-</div>
-    	
-    </div>
+        
   </div>
+    
+<% end %>
