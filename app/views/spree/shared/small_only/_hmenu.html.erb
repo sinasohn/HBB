@@ -7,15 +7,24 @@
             <div>Close menu</div>
         </a>
  -->
-        <a id="hmenu-customer-profile-link" href="https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Faw%2Fs%2Fref%3Dis_s%3Fk%3Dbread%26ref_%3Dnavm_em_hd_re_signin%26_encoding%3DUTF8&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=anywhere_v2_us&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;&amp;openid.pape.max_auth_age=0&amp;ref=navm_em_hd_clc_signin">
+        <a id="hmenu-customer-profile-link" >
             <div id="hmenu-customer-profile">
                 <div id="hmenu-customer-profile-left" class="hmenu-avatar-icon">
                     <div id="hmenu-customer-avatar-icon" class="nav-sprite"></div>
                 </div>
                 <div id="hmenu-customer-profile-right">
-                    <%= link_to(login_path , id: "hmenu-customer-name", class: "button") do %>
+                    <% if signed_in? %>
+                        <%= link_to(account_path , id: "hmenu-customer-name", class: "button") do %>
                         <%= fa_stacked_icon "user", base: "square-o" %> 
-                        Hello. Sign in
+                        Hi there!
+                    <% end %>
+                    
+                    <% else %>
+                        <%= link_to(login_path , id: "hmenu-customer-name", class: "button") do %>
+                            <%= fa_stacked_icon "user", base: "square-o" %> 
+                            Hello. Sign in
+                        <% end %>
+                        
                     <% end %>
                 </div>
             </div>
@@ -23,8 +32,8 @@
 
         <div id="hmenu-top-section" class="button-group">
               <a class="button">Home</a>
-              <a class="button">Orders</a>
-              <a class="button">Lists</a>
+              <%= link_to "Orders", account_path, class: "button" %>
+              <!-- <a class="button">Lists</a> -->
         </div>
 
         <div id="hmenu-content">
@@ -69,7 +78,7 @@
             <ul class="vertical menu drilldown" data-drilldown>
 
                 <li>
-                     <%= link_to "Your Account", login_path, class: "menu-item"  %>
+                     <%= link_to "Your Account", account_path, class: "menu-item"  %>
                 </li>
                 <li>
                     <a id="hmenu-icp-language" href="/gp/customer-preferences/select-language/?preferencesReturnUrl=%2Fgp%2Faw%2Fs%2Fref%3Dis_s%3Fk%3Dbread&amp;ref=navm_em_0_1_0_12_mozart" class="hmenu-item">
@@ -98,7 +107,17 @@
                     </a>
                 </li>
                 <li>
-                     <%= link_to "Sign In", login_path, class: "menu-item"  %>
+                    <% if signed_in? %>
+                        <%= link_to(logout_path, class: "menu-item") do %>
+                        Log out
+                    <% end %>
+                    
+                    <% else %>
+                        <%= link_to(login_path, class: "menu-item") do %>
+                            Sign in
+                        <% end %>
+                        
+                    <% end %>
                 </li>
                 <li class="hmenu-separator"></li>
             </ul>
