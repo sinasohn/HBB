@@ -14,25 +14,28 @@
 
       <%= render partial: 'spree/shared/header' %>
 
-      <div id="wrapper" class="row" data-hook>
-      <div class="grid-container full">
-        <%= render partial: 'spree/shared/breadcrumbs_and_sort_order'%>
-      </div>
+      <div id="wrapper" class="grid-x" data-hook>
+        <div class="cell">
+                  <div class="grid-container full">
+          <%= render partial: 'spree/shared/breadcrumbs_and_sort_order'%>
+        </div>
 
-      <div class="grid-x grid-margin-x">
+        <div class="grid-x grid-padding-x">
 
-        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
-        <div class="cell medium-10">
-          <div  id="content"class="cell medium-10" data-hook>
-            <%= flash_messages %>
-            <%= yield %>
-            <%= yield :templates %>
+          <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+          <div class="cell medium-10">
+            <div  id="content"class="cell medium-10" data-hook>
+              <%= flash_messages %>
+              <%= yield %>
+              <%= yield :templates %>
+            </div>
           </div>
         </div>
-      </div>
 
 
        <%= render partial: 'spree/shared/footer' %>            
+
+        </div>
 
     </div>
     <script type="text/javascript">
