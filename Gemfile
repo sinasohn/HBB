@@ -66,3 +66,4 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 # gems specific to using solidus
 gem 'solidus', '~> 2.6'
 gem 'solidus_auth_devise'
+gem 'fog-aws', '~> 3.0'
