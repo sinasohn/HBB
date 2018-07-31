@@ -6,8 +6,7 @@ if Rails.application.secrets.aws_access_key_id
     fog_credentials: {
       provider: 'AWS',
       aws_access_key_id: Rails.application.secrets.aws_access_key_id,
-      aws_secret_access_key: Rails.application.secrets.aws_secret_access_key,
-      region: Rails.application.secrets.s3_region_name,
+      aws_secret_access_key: Rails.application.secrets.aws_secret_access_key
     },
     fog_directory: Rails.application.secrets.s3_bucket_name
   )
