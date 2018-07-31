@@ -28,6 +28,3 @@ attachment_config = {
 attachment_config.each do |key, value|
    Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
 end unless Rails.env.test?
-
-# workaround for `NameError (uninitialized constant Aws::VERSION)`
-Aws::VERSION =  Gem.loaded_specs["aws-sdk"].version
