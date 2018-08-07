@@ -1,0 +1,59 @@
+<!-- 
+<% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Spree::Taxon.roots %>
+<%= form_tag spree.products_path, method: :get do %>
+  <% cache [I18n.locale, @taxons] do %>
+    <%= select_tag :taxon,
+          options_for_select([[t('spree.all_departments'), '']] +
+                                @taxons.map {|t| [t.name, t.id]},
+                                @taxon ? @taxon.id : params[:taxon]), 'aria-label' => 'Taxon', 'class' => "nav-search-dropdown searchSelect" %>
+  <% end %>
+    <div class="box">
+      <select>
+        <option value="1">Some option</option>
+        <option value="2">Another option</option>
+        <option value="3" disabled>A disabled option</option>
+        <option value="4">Potato</option>
+      </select>
+    </div>    
+    <div class="input-group">
+  	  <%= search_field_tag :keywords, params[:keywords], class:"input-group-field"  %>
+  	  <div class="input-group-button">
+    		<%= submit_tag t('spree.search'), name: nil, class: "button" %>
+  	  </div>
+	  </div>
+
+<% end %>
+ -->
+
+ <%= form_tag spree.products_path, method: :get do %>
+
+ <!-- <form accept-charset="utf-8" action="/s/ref=nb_sb_noss" class="nav-searchbar" method="GET" name="site-search" role="search"> -->
+<div class="grid-x">
+  
+    <div class="nav-left cell shrink">
+        <div class="nav-search-scope nav-sprite">
+            <span id="searchDropdownDescription" style="display:none">Select the department you want to search in</span>
+  <% cache [I18n.locale, @taxons] do %>
+    <%= select_tag :taxon,
+          options_for_select([[t('spree.all'), '']] +
+                                @taxons.map {|t| [t.name, t.id]},
+                                @taxon ? @taxon.id : params[:taxon]), 'aria-label' => 'Taxon', 'class' => "nav-search-dropdown searchSelect" %>
+  <% end %>
+
+        </div>
+    </div>
+    <div class="nav-fill cell auto">
+        <div class="nav-search-field ">
+            <!-- DO NOT REMOVE: the text in the label are for screen reader, and it is not visible in the web page -->
+                  <%= search_field_tag :keywords, params[:keywords], class:"input-group-field"  %>
+
+        </div>
+        <div id="nav-iss-attach"></div>
+    </div>
+    <div class="nav-right cell shrink">
+                <%= submit_tag t('spree.search'), name: nil, class: "button" %>
+    </div>
+</div>
+
+<!-- </form> -->
+<% end %>

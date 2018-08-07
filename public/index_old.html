@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title> Heather's Baking Bee </title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+<link href="css/swing.css" rel="stylesheet" type="text/css">
+<link href="css/pics.css" rel="stylesheet" type="text/css">
+	<link href="css/form.css" rel="stylesheet" type="text/css">
+	<link rel="canonical" href="https://www.fbdemo.com/captcha/index.html" />
+<style>
+
+@viewport {width:extend-to-zoom; zoom:1.0;}
+html, body {padding:0; margin:0; outline:0; border:0; width:100vw;}
+body {font-size:3vmin; font-family:'Open Sans', arial, sans-serif; font-weight:300; background:#f8f8f8; overflow:hidden; overflow-y:scroll;}
+body * {padding:0; margin:0; outline:0; border:0;}
+
+.wrapper {width:100vw; transition: 1s; position:relative; z-index:10; background-image: url(images/wood.jpg);
+-webkit-transform:translate3d(0vw,0vh,0);
+transform:translate3d(0vw,0vh,0);
+}
+.footer {background:#329cd2; text-align:center; color:#fff; font-weight:400; padding:4vh 0;}
+.top-panel a {display:block; background-image: url(images/tile.jpg); color:#fff; font-weight:400; padding:4vh 0; text-decoration:none;}
+.top-sub-panel {background:#329cd2; text-align:center; color:#fff; font-weight:400; padding:3vh 0;}
+.wrapper p {font-size:2vmin; color:#444; width:60vw; margin:0 auto; text-align:center;}
+.wrapper h4 {text-align:center;}
+h3 {color:#fff; font-weight:300; position:absolute; left:0; top:0; bottom:0; right:0; width:60%; height:50%; margin:auto; text-align:center;}
+h5 {color:#fff; font-weight:300; line-height:2vh; font-size:2vmin;}
+h5 a {color:#fff; text-decoration:none;}
+h5 a:hover {text-decoration:underline;}
+
+#modal-close,
+.action-hidden {position:absolute; left:-9999px; display:none;}
+.action-panel {display:inline-block; position: relative; cursor:pointer; font-size:2vmin; color:#fff; text-align:center; line-height: 10vh;}
+
+.fullscreen-1 {width:15%; height:10vh; background:#71D8B6; border-radius: 25px 25px 25px 25px;}
+.fullscreen-2 {width:15%; height:10vh; background:#ea851d; border-radius: 25px 25px 25px 25px;}
+.fullscreen-3 {width:15%; height:10vh; background:#9e6ba9; border-radius: 25px 25px 25px 25px;}
+.fullscreen-4 {width:15%; height:10vh; background:#8b37aa; border-radius: 25px 25px 25px 25px;}
+.fullscreen-5 {width:15%; height:10vh; background:#1672bb; border-radius: 25px 25px 25px 25px;}
+
+.popup {position:fixed; left:-100vw; top:0; width:100vw; height:100vh; opacity:0; transition: opacity 0.75s, left 0s 0.75s; z-index:1000; overflow: scroll;}
+	.h1 {
+		text-align: center;	color: antiquewhite; border-bottom: thin #E4E4E4;
+	}
+label.modal-close {display:block; width:3vw; height:3vw; color:#fff; position:absolute; right:2vw; top:2vw; cursor:pointer;}
+label.modal-close:before {display:block; content:""; width:100%; height:4px; background:#fff; position:absolute; left:0; top:50%; margin-top:-2px; 
+-webkit-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+label.modal-close:after {display:block; content:""; width:100%; height:4px; background:#fff; position:absolute; left:0; top:50%; margin-top:-2px; 
+-webkit-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+.modal-fullscreen-1 {background:#71D8B6; overflow: scroll; padding: 0 -25px 0 25px;	color: black; font-size: 2vh;}
+.modal-fullscreen-2 {background:#ea851d; overflow: scroll; padding: 0 -25px 0 25px;	color: antiquewhite;}
+.modal-fullscreen-3 {background:#9e6ba9; overflow: scroll; padding: 0 -50px 0 25px;	color: antiquewhite;}
+.modal-fullscreen-4 {background:#8b37aa; overflow: scroll; padding: 0 -25px 0 25px;	color: antiquewhite;}
+.modal-fullscreen-5 {background:#1672bb; overflow: scroll; padding: 0 -25px 0 25px;	color: antiquewhite;}
+
+.popup img {display:block; height:60vmin; max-height:600px; position:absolute; left:0; top:0; right:0; bottom:0; margin:auto;}
+
+#modal-fullscreen-1:checked ~ .modal-fullscreen-1,
+#modal-fullscreen-2:checked ~ .modal-fullscreen-2,
+#modal-fullscreen-3:checked ~ .modal-fullscreen-3,
+#modal-fullscreen-4:checked ~ .modal-fullscreen-4,
+#modal-fullscreen-5:checked ~ .modal-fullscreen-5,
+#modal-fullscreen-6:checked ~ .modal-fullscreen-6,
+#modal-fullscreen-7:checked ~ .modal-fullscreen-7 {left:0; opacity:1; transition:opacity 0.75s;}
+
+	.modal-overlay-close {display:block; width:100vw; height:0; position:fixed; left:0; top:0; background:rgba(0,0,0,0.5); transition: left 1s; z-index:100; cursor:pointer;}
+.action-hidden:checked ~ .modal-overlay-close {height:100vh;}
+#modal-right-fixed:checked ~ .modal-overlay-close {left:-40vw;}
+#modal-left-fixed:checked ~ .modal-overlay-close {left:40vw;}
+
+blockquote {
+  background: #00EBFF;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px 0 50px;
+  padding: 0.5em 10px 0 50px;
+  width: 50%;
+  quotes: "\201C""\201D""\2018""\2019";
+  font: 18px/30px normal helvetica, sans-serif;
+  color: black;
+  background-image: url(images/openquote4.gif);
+  background-position: middle left;
+  background-repeat: no-repeat;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+</style>
+
+</head>
+
+<body>
+	<input type="radio" name="action" id="modal-close">
+<input type="radio" name="action" id="modal-fullscreen-1" class="action-hidden">
+<input type="radio" name="action" id="modal-fullscreen-2" class="action-hidden">
+<input type="radio" name="action" id="modal-fullscreen-3" class="action-hidden">
+<input type="radio" name="action" id="modal-fullscreen-4" class="action-hidden">
+<input type="radio" name="action" id="modal-fullscreen-5" class="action-hidden">
+
+<label for="modal-close" class="modal-overlay-close"></label>
+<div class="wrapper">
+<h1 class="top-panel">
+	<a href="/" title="Home Page"><img src="images/shelf.png" style="z-index: -1;"> 
+	<div class="box">
+	<img class="sp-icon-1" src="images/menu.png" style="z-index: 10; position: absolute; top: 45px; right: 200px; box-shadow: 15px 10px 18px #888888;">
+		</div>
+	</a>
+</h1>
+	<br>
+	<br>
+
+<label class="action-panel fullscreen-1" for="modal-fullscreen-1"><a href="/yummies">Yummies</a></label>
+<label class="action-panel fullscreen-2" for="modal-fullscreen-2">Meet the baker</label>
+<label class="action-panel fullscreen-3" for="modal-fullscreen-3">Testimonials</label>
+<label class="action-panel fullscreen-4" for="modal-fullscreen-4">Gallery</label>
+<label class="action-panel fullscreen-5" for="modal-fullscreen-5">Contact us</label>
+
+	
+	
+	<br><br>
+	<br><br>
+	
+	
+  <br>
+	<div class="footer">
+		<h5>Produced by Stan Sinasohn - Sinasohn Communications</h5>
+		<br>
+		
+		<br>
+	</div>
+</div>
+
+	<!-- place your order -->
+<div class="popup modal-fullscreen-1"><label for="modal-close" class="modal-close"></label>
+	<img src="images/logobee.png" style="float: right;">
+<div style="float: right; z-index: 25; width: 250px; background: #C5C1C1; position: absolute; left: 55%; top: 150px;">enter the quantity of items you would like to order and your preferred delivery day and time and select Send.</div>	
+<form id="two" action="..." method="post">
+  <fieldset id="personal">
+    <legend>Desert Breads</legend>
+    <label for="DoubleChoc">Double Chocolate </label><br>
+    Minis (2/$5)
+	<input name="DCM" id="DCM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Loafs ($8)
+	<input name="DCL" id="DCL" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+    <label for="bananaWal">Banana Walnut </label><br>
+	Minis (2/$5)
+	<input name="BWM" id="BWM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Loafs ($8)
+	<input name="BWL" id="BWLs" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+    <label for="PumpkinCran">Pumpkin Cranberry </label> <br>
+	Minis (2/$5)
+	<input name="PCM" id="PCM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Loafs ($8)
+	<input name="PCL" id="PCL" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+  <fieldset id="personal">
+    <legend>Brownies</legend>
+    With Walnuts (3/$6)
+	<input name="BWW" id="BWW" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	No Walnuts (3/$5)
+	<input name="BNW" id="BNW" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+  <fieldset id="personal">
+    <legend>Breads</legend>
+    Dinner Rolls (6/$5)
+	<input name="BDR" id="BDR" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	English Muffins (6/$5)
+	<input name="BEM" id="BEM" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Burger/Sandwich Buns (4/$5)
+	<input name="BBB" id="BBB" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	White Bread ($7)
+	<input name="BWH" id="BWH" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Wheat Bread ($7)
+	<input name="BWB" id="BWB" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+  <fieldset id="personal">
+    <legend>Cookies</legend>
+    Chocolate Chip (12/$6)
+	<input name="CCC" id="CCC" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	PB&amp;J (12/$6)
+	<input name="PBJ" id="PBJ" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Bluberry Chocolate Wedding (12/$6)
+	<input name="CBC" id="CBC" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Lemon Wedding (12/$6)
+	<input name="CLW" id="CLW" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+	Oatmeal Apple Raisin (12/$6)
+	<input name="COA" id="COA" type="number" 
+    tabindex="1" style="margin: 0 15px;" />
+    <br />
+  </fieldset>
+  <fieldset id="personal">
+    <legend>Furry Kids</legend>
+    Dog Vone Treats (12/$6)
+	<input name="FKT" id="FKT" type="number" 
+    tabindex="1" style="margin: 0 15px;" /><br>
+  </fieldset>
+  <input id="button1" type="submit" value="Send" /> 
+  <input id="button2" type="reset" />
+  </p>
+</form>
+</div>
+	
+	<!-- Meet the baker -->
+<div class="popup modal-fullscreen-2"><label for="modal-close" class="modal-close"></label>
+	<h1>Meet Heather Raymond</h1>
+	<blockquote style="float: left;">
+	After years of dreaming, I’m so excited to bring to you ( literally ) my homemade goodies! <br>
+	This business is because of my Grandparents. Some of my earliest memories are of baking cookies in the kitchen with my Grandpa, who called my Grandma Bee. I hope you enjoy my treats as much as I enjoy the associated memories.  :) <br>
+	I will be delivering in San Francisco on Tuesdays and Thursdays. Please be sure to state in your order where and what day you would like delivery.<br>
+	Message me if you are looking for treats for a special occasion and i will be posting local events as they occur.</blockquote>
+<img src="images/heather.jpg" style="position: relative;">
+</div>
+
+	<!-- Reviews -->
+<div class="popup modal-fullscreen-3"><label for="modal-close" class="modal-close"></label>
+	<h1>What are they saying about Heather's Baking Bee?</h1>
+<blockquote>
+Heather's baked goods are absolutely hands down delicious! If you have never had a home made English muffin you're missing out. Do it! I highly recommend her brownies. They have a full chocolatey buttery texture that is simply delectable. She also makes treats for doggie! My dog Scotty gives them 2 paws up! Whatever you order it will be delish! She is punctual and accommodating with your dietary needs. Don't wait! Just order! You will be glad you did!
+</blockquote>
+	
+<blockquote style="float: right";>
+	Heather takes her time to ensure perfection in every bite! No additives or extraneous ingredients to drown out flavor! Her lemon cookies are soft and moist and wonderful, melts in your mouth! We had her dinner rolls with our chicken and they are perfect for dipping in juices!! Heather is who I'm gonna go to for all my pastry needs!!!
+</blockquote>
+
+<blockquote style="float: left";>
+	Heather delivered an order to our local firehouse after we had a fire and then one to our home. Everything we have tried is wonderful. I especially love the fresh English muffins and the dogs as crazy over their dog treats. Pumpkin Cranberry bread, the best I have ever had. Thank you Heather!
+</blockquote>
+</div>	
+	
+	<!-- Gallery -->
+<div class="popup modal-fullscreen-4"><label for="modal-close" class="modal-close"></label>
+	<h1>Some of the goodies we've made</h1>
+	
+<br><br>
+
+
+<div id="gallery">
+	<div id="fullsize">
+		<div id="pic1"><img class="portrait" src="/gallery/brownies.jpg" alt="pic1"></div>
+		<div id="pic2"><img class="portrait" src="/gallery/buns.jpg" alt="pic2"></div>
+		<div id="pic3"><img class="landscape" src="/gallery/loaves.jpg" alt="pic3"></div>
+		<div id="pic4"><img class="portrait" src="/gallery/muffins.jpg" alt="pic4"></div>
+		<div id="pic5"><img class="landscape" src="/gallery/scones.jpg" alt="pic5"></div>
+		<div id="pic6"><img class="portrait" src="/gallery/treats1.jpg" alt="pic5"></div>
+	</div>
+	<ul id="thumbnails">
+		<li><a href="#target1"><img src="/gallery/brownies.jpg" alt="pic1"></a></li>
+		<li><a href="#target2"><img src="/gallery/buns.jpg" alt="pic2"></a></li>
+		<li><a href="#target3"><img src="/gallery/loaves.jpg" alt="pic3"></a></li>
+		<li><a href="#target4"><img src="/gallery/muffins.jpg" alt="pic4"></a></li>
+		<li><a href="#target5"><img src="/gallery/scones.jpg" alt="pic5"></a></li>
+		<li><a href="#target6"><img src="/gallery/treats1.jpg" alt="pic6"></a></li>
+	</ul>
+</div>
+
+
+</div>
+	
+	<!-- Contact us -->
+<div class="popup modal-fullscreen-5"><label for="modal-close" class="modal-close"></label>
+	<h1>Questions?  Have a special order? Give us a shout</h1>
+
+	<form action="feedback.php" method="post" id="tswfbform" accept-charset="UTF-8">
+<label for="tswname">Name</label> <input type="text" name="fullname" style="max-width: 100%;" id="tswname" size="39" /><br />&nbsp;<br />
+<label for="tswemail">Email</label> <input type="text" style="max-width: 100%;" id="tswemail" name="email" size="39" /><br />&nbsp;<br />
+<label for="tswcomments">Comments</label><br />&nbsp;<br />
+<textarea rows="15" cols="45" name="comments" style="max-width: 100%;" id="tswcomments"></textarea>
+<br />&nbsp;<br />
+	<p id="tsw_js_message">
+	Error: please enable JavaScript and reload this page before using the form.
+	</p>
+	<script type="text/javascript">
+	var tsw_js_message_block ;
+	tsw_js_message_block = document.getElementById( 'tsw_js_message' );
+	tsw_js_message_block.parentNode.removeChild( tsw_js_message_block );
+	</script>
+		<div class="g-recaptcha" data-sitekey="6Lfr-gITAAAAAFttZzEvvSv-TOJu7JS5hvIDtVK_"></div>
+		<br />&nbsp;<br />
+		<input id="tswsubmit" type="submit" value="Send Feedback" />
+	<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en" async="async" defer="defer"></script>
+</form>
+</div>
+
+</body>
+</html>

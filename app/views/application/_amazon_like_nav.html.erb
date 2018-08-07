@@ -1,0 +1,114 @@
+<header class="nav-mobile nav-locale-us nav-lang-en nav-ssl nav-unrec nav-blueheaven col-md-12" style="background-color: green;">
+    <div id="navbar" role="navigation" class="nav-t-gateway nav-sprite-v3">
+        <div id="nav-logobar">
+            <div class="nav-left">
+
+                <a href="javascript: void(0)" id="nav-hamburger-menu" aria-label="Open Menu" class=""><i role="button" class="nav-icon-a11y nav-sprite"></i></a>
+                <script type="text/javascript">
+                    var hmenu = document.getElementById("nav-hamburger-menu");
+                    // Disable link on nav-hamburger-menu as JS is enabled in the browser
+                    hmenu.setAttribute("href", "javascript: void(0)");
+                    // Attach metric logger function to window object so that it is available
+                    // later (possibly in another JS file) to remove as the event listener.
+                    window.navHamburgerMetricLogger = function() {
+                        if (window.ue && window.ue.count) {
+                            var metricName = "Navm:Hmenu:IconClickActionPending";
+                            window.ue.count(metricName, (ue.count(metricName) || 0) + 1);
+                        }
+                    };
+                    hmenu.addEventListener("click", window.navHamburgerMetricLogger);
+                </script>
+                <script type="text/javascript">
+                    window.$Nav && $Nav.declare('hamburgerMenuIconAvailableOnLoad', false);
+                </script>
+
+                <script type="text/javascript">
+                    window.navmet.tmp = +new Date();
+                </script>
+                <div id="nav-logo">
+                	<a href="/ref=navm_hdr_logo" class="nav-logo-link">
+                		<span class="nav-sprite nav-logo-base"></span> 
+                		<span class="nav-sprite nav-logo-ext"></span> 
+                		<span class="nav-sprite nav-logo-locale"></span>
+                	</a>
+                </div>
+                <script type="text/javascript">
+/*                    window.navmet.push({
+                        key: 'Logo',
+                        end: +new Date(),
+                        begin: window.navmet.tmp
+                    }); */
+                </script>
+            </div>
+            <div class="nav-right">
+
+                <a href="https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fhomepage.html%3Fopf_redir%3D1%26ref_%3Dnavm_hdr_signin%26_encoding%3DUTF8&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=anywhere_v2_us&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;&amp;openid.pape.max_auth_age=0" id="nav-logobar-greeting" class="nav-a nav-show-sign-in">Sign In</a>
+
+                <a href="/gp/aw/ya/ref=navm_hdr_profile" class="nav-a" id="nav-button-avatar"><i class="nav-icon nav-icon-a11y nav-sprite">your account</i></a>
+                <a href="/gp/aw/c/ref=navm_hdr_cart" aria-label="Cart" class="nav-a" id="nav-button-cart">
+                    <div class="nav-cart-empty"><i class="nav-icon nav-sprite"></i> <span class="nav-cart-count">0</span></div>
+                </a>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+ //           window.navmet.tmp = +new Date();
+        </script>
+        <div id="search-ac-init-data" data-aliases="aps,amazon-custom-products,amazon-devices,amazonbasics,amazonfresh,stripbooks,popular,apparel,electronics,sporting,sports-and-fitness,outdoor-recreation,fan-shop,garden,videogames,toys-and-games,jewelry,digital-text,digital-music,prime-digital-music,watches,grocery,hpc,instant-video,handmade,handmade-jewelry,handmade-home-and-kitchen,prime-instant-video,shop-instant-video,baby-products,office-products,software,magazines,tools,automotive,misc,industrial,mi,pet-supplies,digital-music-track,digital-music-album,mobile,mobile-apps,movies-tv,music-artist,music-album,music-song,stripbooks-spanish,electronics-accessories,pantry,photo,audio-video,computers,furniture,kitchen,audible,audiobooks,beauty,shoes,arts-crafts,appliances,gift-cards,pets,outdoor,lawngarden,collectibles,replacement-parts,financial,wine,fine-art,fashion,fashion-womens,fashion-womens-clothing,fashion-womens-jewelry,fashion-womens-shoes,fashion-womens-watches,fashion-womens-handbags,fashion-mens,fashion-mens-clothing,fashion-mens-jewelry,fashion-mens-shoes,fashion-mens-watches,fashion-girls,fashion-girls-clothing,fashion-girls-jewelry,fashion-girls-shoes,fashion-girls-watches,fashion-boys,fashion-boys-clothing,fashion-boys-jewelry,fashion-boys-shoes,fashion-boys-watches,fashion-baby,fashion-baby-boys,fashion-baby-girls,fashion-luggage,3d-printing,tradein-aps,local-services,vehicles,video-shorts,warehouse-deals,luxury-beauty,banjo-apps,black-friday,cyber-monday,alexa-skills,subscribe-with-amazon,courses,amazon-global-store,prime-wardrobe" data-ime="" data-mkt="1" data-src="completion.amazon.com/search/complete"></div>
+        <div id="nav-search-keywords-data" data-implicit-alias="aps"></div>
+        <div class="nav-searchbar-wrapper">
+            <form class="nav-searchbar" action="/gp/aw/s/ref=is_s" method="get" role="search" id="nav-search-form" accept-charset="utf-8">
+                <div class="nav-right">
+                    <div class="nav-search-submit">
+                        <input class="nav-input" value="Go" aria-label="Go" type="submit"> <i class="nav-icon nav-sprite"></i></div>
+                </div>
+                <div class="nav-fill">
+                    <div class="nav-search-field">
+                        <input class="nav-input" placeholder="Search" aria-label="Type search keywords" data-aria-clear-label="Clear search keywords" name="k" autocomplete="off" autocorrect="off" autocapitalize="off" dir="auto" value="" id="nav-search-keywords" type="text">
+                        <a class="nav-icon nav-sprite nav-search-clear" tabindex="0" href="javascript:;" aria-label="Clear search keywords"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+/*            window.navmet.push({
+                key: 'SearchBar',
+                end: +new Date(),
+                begin: window.navmet.tmp
+            }); */
+        </script>
+        <script type="text/javascript">
+            var nav_t_after_searchbar = +new Date();
+        </script>
+
+        <script type="text/javascript">
+            window.navmet.tmp = +new Date();
+        </script>
+        <div id="nav-gwbar" class="nav-gwbar-single-row nav-genz nav-genz-card-colors">
+        	<a id="deals" href="/gp/aw/gb?ref=navm_deals_btn" class="nav-a">Deals</a> 
+        	<a id="prime" href="/gp/prime?ref=navm_prime_btn" class="nav-a">Prime</a> 
+        	<a id="fresh" href="/gp/browse.html?node=10329849011&amp;ref=navm_fresh_btn_nonmember" class="nav-a">Fresh</a> 
+        	<a id="video" href="/b?node=2858778011&amp;rh=i%3Ainstant-video%2Cn%3A2858778011&amp;ref=navm_video_btn" class="nav-a">Video</a> 
+        	<a id="music" href="/gp/browse.html?node=14981443011&amp;ref=navm_music_btn" class="nav-a">Music</a>
+        </div>
+        <script type="text/javascript">
+            window.navmet.push({
+                key: 'Gateway',
+                end: +new Date(),
+                begin: window.navmet.tmp
+            });
+        </script>
+
+        <div class="glow-subnav-template glow-mobile-subnav" id="nav-subnav-container">
+            <div class="a-declarative" data-action="glow-sheet-trigger" id="nav-global-location-slot">
+                <div class="nav-sprite" id="nav-packard-glow-loc-icon"></div>
+                <div id="glow-ingress-block"><span class="nav-single-line" id="glow-ingress-single-line">Deliver to Santaclara 95050</span></div>
+                <input data-addnewaddress="new" id="unifiedLocation1ClickAddress" name="addressID" value="new" type="hidden">
+            </div>
+        </div>
+
+        <div id="nav-subnav-toaster"></div>
+
+    </div>
+
+</header>

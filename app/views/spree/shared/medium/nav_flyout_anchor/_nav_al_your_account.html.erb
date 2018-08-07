@@ -1,0 +1,34 @@
+    <div class="nav-title">Your Account</div>
+    <a href="/gp/css/homepage.html/ref=nav_youraccount_ya" class="nav-link nav-item">
+        <span class="nav-text">Your Account</span>
+    </a>
+    <%= link_to account_path do %>
+        <span class="nav-text">Your Account</span>
+    <% end %>
+    <%= link_to account_path do %>
+        <span class="nav-text">Your Orders</span>
+    <% end %>
+<!--     <a href="/gp/registry/wishlist/ref=nav_youraccount_wl?ie=UTF8&amp;requiresSignIn=1" class="nav-link nav-item">
+        <span class="nav-text">Your Lists</span>
+    </a>
+    <a href="/gp/yourstore/ref=nav_youraccount_recs" class="nav-link nav-item">
+        <span class="nav-text">Your Recommendations</span>
+    </a>
+    <a href="/gp/subscribe-and-save/manager/viewsubscriptions/ref=nav_youraccount_sns" class="nav-link nav-item">
+        <span class="nav-text">Your Subscribe &amp; Save Items</span>
+    </a>
+    <a href="/yourmembershipsandsubscriptions/ref=nav_youraccount_digital_subscriptions" class="nav-link nav-item"><span class="nav-text">Memberships &amp; Subscriptions</span></a>
+    <a href="/localservices/ya/servicerequests/ref=nav_youraccount_desktop_vas_requestlist" class="nav-link nav-item">
+        <span class="nav-text">Your Service Requests</span>
+    </a> -->
+
+<% if signed_in? %>
+    <%= link_to  destroy_spree_user_session_path, 
+        class: "nav-link nav-item", 
+        method: :get do %>
+            <span class="nav-text">Sign out</span>
+    <% end %>
+    <a href="/localservices/ya/servicerequests/ref=nav_youraccount_desktop_vas_requestlist" class="nav-link nav-item">
+    </a>
+    
+<% end %>

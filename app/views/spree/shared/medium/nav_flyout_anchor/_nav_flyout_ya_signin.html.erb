@@ -1,0 +1,22 @@
+
+<% if signed_in? %>
+
+<% else %>
+  <div class="grid-x grid-margin-x">
+    <div class="auto">
+       <div id="nav-flyout-ya-signin" class="nav-flyout-content cell vertical-center">
+            <%= link_to login_path, 
+                class: "nav-action-button", 
+                data: {"nav-role": "signin", "nav-ref": "nav_signin"} do %>
+                    <span class="nav-action-inner button">Sign in</span>
+            <% end %>
+        <div id="nav-flyout-ya-newCust" class="nav_pop_new_cust nav-flyout-content vertical-center">
+            New customer?
+            <%= link_to "Start here.", new_spree_user_registration_path %>
+
+        </div>
+    </div>
+        
+  </div>
+    
+<% end %>

@@ -1,0 +1,135 @@
+<div id="hmenu-container" style="display: block;" class="nav-sprite-v3 hmenu-visible">
+<button class="close-button" aria-label="Close menu" type="button" data-close>
+  &times;
+</button>
+    <div id="hmenu-canvas" class="hmenu-translateX">
+<!--         <a id="hmenu-close-menu" class="hmenu-hidden-link" href="javascript:void(0)">
+            <div>Close menu</div>
+        </a>
+ -->
+        <a id="hmenu-customer-profile-link" >
+            <div id="hmenu-customer-profile">
+                <div id="hmenu-customer-profile-left" class="hmenu-avatar-icon">
+                    <div id="hmenu-customer-avatar-icon" class="nav-sprite"></div>
+                </div>
+                <div id="hmenu-customer-profile-right">
+                    <% if signed_in? %>
+                        <%= link_to(account_path , id: "hmenu-customer-name", class: "button") do %>
+                        <%= fa_stacked_icon "user", base: "square-o" %> 
+                        Hi there!
+                    <% end %>
+                    
+                    <% else %>
+                        <%= link_to(login_path , id: "hmenu-customer-name", class: "button") do %>
+                            <%= fa_stacked_icon "user", base: "square-o" %> 
+                            Hello. Sign in
+                        <% end %>
+                        
+                    <% end %>
+                </div>
+            </div>
+        </a>
+
+        <div id="hmenu-top-section" class="button-group">
+              <a class="button">Home</a>
+              <%= link_to "Orders", account_path, class: "button" %>
+              <!-- <a class="button">Lists</a> -->
+        </div>
+
+        <div id="hmenu-content">
+            <ul class="vertical menu drilldown" data-drilldown>
+
+              <li><a href="#">Today's Deals</a></li>
+              <li>
+                <a href="#">Top Departments</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#">Cookies</a></li>
+                  <li><a href="#">Treats</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Three</a></li>
+              <li><a href="#">Four</a></li>
+            </ul>
+
+
+            <ul class="hmenu hmenu-translateX-right hmenu-hidden vertical menu drilldown" data-menu-id="3" data-parent-menu-id="2" data-drilldown>
+                
+            </ul>
+
+            <ul class="hmenu hmenu-translateX-right hmenu-hidden" data-menu-id="20" data-parent-menu-id="2">
+
+            </ul>
+
+            <ul class="hmenu hmenu-translateX-right hmenu-hidden" data-menu-id="21" data-parent-menu-id="2">
+
+            </ul>
+
+            <ul class="hmenu hmenu-translateX-right hmenu-hidden" data-menu-id="22" data-parent-menu-id="2">
+
+            </ul>
+
+            <ul class="hmenu hmenu-translateX-right hmenu-hidden" data-menu-id="23" data-parent-menu-id="2">
+            </ul>
+
+            <ul class="hmenu hmenu-translateX-right hmenu-hidden" data-menu-id="24" data-parent-menu-id="2">
+
+            </ul>
+
+            <ul class="vertical menu drilldown" data-drilldown>
+
+                <li>
+                     <%= link_to "Your Account", account_path, class: "menu-item"  %>
+                </li>
+                <li>
+                    <a id="hmenu-icp-language" href="/gp/customer-preferences/select-language/?preferencesReturnUrl=%2Fgp%2Faw%2Fs%2Fref%3Dis_s%3Fk%3Dbread&amp;ref=navm_em_0_1_0_12_mozart" class="hmenu-item">
+                        <div>
+                            <div class="hmenu-icon-container">
+                                <i class="icon-css-reset icp-nav-globe-img-2 icp-mobile-globe-2"></i>
+                            </div>
+                            English
+                        </div>
+                    </a>
+              <li>
+                    <a href="/gp/navigation-country/select-country/?ref=navm_em_0_1_0_13_locale" class="hmenu-item">
+                        <div>
+                            <div class="hmenu-icon-container">
+                                <i class="icon-css-reset icp-flag-3 icp-flag-3-us"></i>
+                            </div>
+                            United States
+                        </div>
+                    </a>
+              </li>
+                <li>
+                    <a href="/gp/aw/contact-us?ref=navm_em_0_1_0_14_cs" class="hmenu-item">
+                        <div>
+                            Customer Service
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <% if signed_in? %>
+                        <%= link_to(logout_path, class: "menu-item") do %>
+                        Log out
+                    <% end %>
+                    
+                    <% else %>
+                        <%= link_to(login_path, class: "menu-item") do %>
+                            Sign in
+                        <% end %>
+                        
+                    <% end %>
+                </li>
+                <li class="hmenu-separator"></li>
+            </ul>
+
+
+            <ul class="hmenu hmenu-translateX-right" data-menu-id="25" data-parent-menu-id="1">
+
+            </ul>
+
+        </div>
+        <a id="hmenu-back-to-top" class="hmenu-hidden-link" href="javascript:void(0)">
+            <div>Back to top</div>
+        </a>
+    </div>
+</div>
