@@ -11,3 +11,4 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+//= require solidus_paypal_braintree/frontend

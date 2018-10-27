@@ -68,3 +68,5 @@ gem 'solidus', '~> 2.6'
 gem 'solidus_auth_devise'
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
+gem 'dotenv-rails', '~> 2.5', groups: [:development, :test]
+gem 'solidus_paypal_braintree', github: 'solidusio/solidus_paypal_braintree', branch: :master
